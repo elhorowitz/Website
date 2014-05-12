@@ -1,0 +1,439 @@
+/* line 2, ../../app/css/vendor/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* HTML5 */
+/* line 6, ../../app/css/base/_reset.scss */
+header, footer, article, section, hgroup, nav, figure {
+  display: block;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset */
+/* line 9, ../../app/css/base/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, hr, p, input, textarea, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../../app/css/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 9, ../../app/css/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 9, ../../app/css/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 9, ../../app/css/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 9, ../../app/css/base/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+/* line 9, ../../app/css/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 9, ../../app/css/base/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 9, ../../app/css/base/_reset.scss */
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 4, ../../app/css/base/_grid.scss */
+.square {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  height: 50%;
+  width: 50%;
+}
+
+/* line 3, ../../app/css/base/_typography.scss */
+h1 {
+  font-size: 2.625em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 19, ../../app/css/base/_typography.scss */
+h2 {
+  font-size: 2em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+/* line 28, ../../app/css/base/_typography.scss */
+h3 {
+  font-size: 1.5em;
+  font-family: "Josefin Slab", serif;
+  font-weight: 300;
+}
+
+/* line 37, ../../app/css/base/_typography.scss */
+p {
+  font-size: 1em;
+  font-family: "Josefin Slab", serif;
+  font-weight: 300;
+}
+
+/* line 46, ../../app/css/base/_typography.scss */
+small {
+  font-size: 0.875em;
+}
+
+/* line 50, ../../app/css/base/_typography.scss */
+a {
+  color: #faf5d3;
+  text-decoration: none;
+}
+
+/* line 1, ../../app/css/layout/_global.scss */
+html, body {
+  background: #faf5d3;
+  color: #faf5d3;
+  font-size: 100%;
+  height: 100%;
+  line-height: 1.5;
+  min-height: 39.375em;
+  width: 100%;
+}
+
+/* line 2, ../../app/css/layout/_content.scss */
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 7, ../../app/css/layout/_content.scss */
+.square {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  height: 50%;
+  position: relative;
+  width: 50%;
+}
+/* line 14, ../../app/css/layout/_content.scss */
+.square header {
+  margin-bottom: 1.5em;
+}
+/* line 16, ../../app/css/layout/_content.scss */
+.square .content-wrapper {
+  -webkit-transition: visibility 0.15s ease 0.15s;
+  -moz-transition: visibility 0.15s ease 0.15s;
+  -o-transition: visibility 0.15s ease 0.15s;
+  transition: visibility 0.15s ease 0.15s;
+}
+/* line 19, ../../app/css/layout/_content.scss */
+.square:hover .content-wrapper {
+  visibility: visible;
+}
+
+/* line 23, ../../app/css/layout/_content.scss */
+.content-wrapper {
+  height: 100%;
+  padding: 2.5em;
+  visibility: hidden;
+}
+
+/* line 29, ../../app/css/layout/_content.scss */
+.content {
+  text-align: center;
+}
+/* line 33, ../../app/css/layout/_content.scss */
+.content .date {
+  font-style: italic;
+  line-height: 2;
+}
+
+/* line 39, ../../app/css/layout/_content.scss */
+.more {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+/* line 47, ../../app/css/layout/_content.scss */
+.big {
+  display: none;
+}
+
+/* line 55, ../../app/css/layout/_content.scss */
+.expanded .close {
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 2, ../../app/css/layout/_about.scss */
+.about {
+  background: #47584d;
+}
+/* line 5, ../../app/css/layout/_about.scss */
+.about .content-wrapper {
+  line-height: 1;
+  position: relative;
+  visibility: visible;
+}
+/* line 11, ../../app/css/layout/_about.scss */
+.about header {
+  bottom: 2em;
+  margin-bottom: 0;
+  padding-left: 2em;
+  position: absolute;
+  right: 2em;
+}
+/* line 19, ../../app/css/layout/_about.scss */
+.about h1, .about h2 {
+  text-align: right;
+}
+
+/* line 5, ../../app/css/layout/_portfolio.scss */
+.portfolio {
+  background: #42a482;
+}
+/* line 8, ../../app/css/layout/_portfolio.scss */
+.portfolio .project {
+  line-height: 1;
+}
+/* line 10, ../../app/css/layout/_portfolio.scss */
+.portfolio .type {
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+}
+
+/* line 19, ../../app/css/layout/_portfolio.scss */
+.portfolio.expanded {
+  display: block;
+  height: calc(100% - 3em);
+  min-height: 36.375em;
+  position: absolute;
+  left: 3em;
+  bottom: 3em;
+  width: calc(100% - 3em);
+}
+/* line 29, ../../app/css/layout/_portfolio.scss */
+.portfolio.expanded .content-wrapper {
+  visibility: visible;
+}
+
+/* line 5, ../../app/css/layout/_resume.scss */
+.resume {
+  background: #be3400;
+}
+/* line 8, ../../app/css/layout/_resume.scss */
+.resume .company {
+  line-height: 1;
+}
+/* line 10, ../../app/css/layout/_resume.scss */
+.resume .position {
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+}
+
+/* line 20, ../../app/css/layout/_resume.scss */
+.resume.expanded {
+  display: block;
+  height: calc(100% - 3em);
+  min-height: 36.375em;
+  position: absolute;
+  right: 3em;
+  top: 3em;
+  width: calc(100% - 3em);
+}
+/* line 30, ../../app/css/layout/_resume.scss */
+.resume.expanded .content-wrapper {
+  visibility: visible;
+}
+
+/* line 1, ../../app/css/layout/_contact.scss */
+.contact {
+  background: #cdb739;
+}
+/* line 4, ../../app/css/layout/_contact.scss */
+.contact header {
+  margin-bottom: 0;
+}
+/* line 8, ../../app/css/layout/_contact.scss */
+.contact .content {
+  margin: 0 auto;
+  position: relative;
+  width: 60%;
+}
+/* line 14, ../../app/css/layout/_contact.scss */
+.contact li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  margin-top: 2em;
+  position: relative;
+  width: 50%;
+}
+/* line 21, ../../app/css/layout/_contact.scss */
+.contact li a {
+  margin: auto;
+  position: relative;
+  width: auto;
+}
+
+/* line 29, ../../app/css/layout/_contact.scss */
+.list-wrapper {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 50%;
+}
+
+/* line 35, ../../app/css/layout/_contact.scss */
+.linkedin, .git, .twitter, .email {
+  background: url("/public/img/sprites.png") no-repeat -9.0625em 0;
+  height: 4em;
+  margin: auto;
+  position: relative;
+  width: 2em;
+}
+/* line 42, ../../app/css/layout/_contact.scss */
+.linkedin + .note, .git + .note, .twitter + .note, .email + .note {
+  -webkit-transition: visibility 0.15s ease 0s;
+  -moz-transition: visibility 0.15s ease 0s;
+  -o-transition: visibility 0.15s ease 0s;
+  transition: visibility 0.15s ease 0s;
+  line-height: 2;
+  margin-top: -2em;
+  text-align: center;
+  visibility: hidden;
+}
+/* line 50, ../../app/css/layout/_contact.scss */
+.linkedin:hover + .note, .git:hover + .note, .twitter:hover + .note, .email:hover + .note {
+  visibility: visible;
+}
+
+/* line 53, ../../app/css/layout/_contact.scss */
+.git {
+  background-position: -6em 0;
+}
+
+/* line 59, ../../app/css/layout/_contact.scss */
+.twitter {
+  background-position: -3em 0;
+}
+
+/* line 65, ../../app/css/layout/_contact.scss */
+.email {
+  background-position: 0 0;
+}
+
+/* line 1, ../../app/css/layout/_footer.scss */
+.footer {
+  height: 2em;
+  width: 100%;
+}
+/* line 5, ../../app/css/layout/_footer.scss */
+.footer p {
+  color: #47584d;
+  text-align: center;
+  text-transform: lowercase;
+  line-height: 2.5;
+}
+/* line 12, ../../app/css/layout/_footer.scss */
+.footer span {
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 5, ../../app/css/base/_media-queries.scss */
+  h2 {
+    font-size: 1.5em;
+  }
+
+  /* line 6, ../../app/css/base/_media-queries.scss */
+  h3 {
+    line-height: 1;
+  }
+
+  /* line 8, ../../app/css/base/_media-queries.scss */
+  .content-wrapper {
+    padding: 2.5em 1.5em 1.5em 1.5em;
+  }
+}
+@media screen and (max-width: 615px) {
+  /* line 17, ../../app/css/base/_media-queries.scss */
+  .main {
+    height: auto;
+  }
+
+  /* line 21, ../../app/css/base/_media-queries.scss */
+  h1 {
+    font-size: 2em;
+  }
+
+  /* line 23, ../../app/css/base/_media-queries.scss */
+  .square {
+    display: block;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 31, ../../app/css/base/_media-queries.scss */
+  .content-wrapper {
+    visibility: visible;
+  }
+  /* line 34, ../../app/css/base/_media-queries.scss */
+  .content-wrapper .collapsed {
+    display: none;
+  }
+
+  /* line 37, ../../app/css/base/_media-queries.scss */
+  .about {
+    background-color: #faf5d3;
+    color: #47584d;
+  }
+  /* line 41, ../../app/css/base/_media-queries.scss */
+  .about header {
+    bottom: 0;
+    padding: 2em 0;
+    position: relative;
+    right: 0;
+  }
+  /* line 48, ../../app/css/base/_media-queries.scss */
+  .about h1, .about h2 {
+    text-align: center;
+  }
+}
