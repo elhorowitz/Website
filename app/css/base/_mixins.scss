@@ -1,0 +1,53 @@
+// CSS3
+// ---------------------------------------
+
+@mixin border-radius ($value) {
+    -webkit-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin opacity ($value) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value * 100})";
+    filter: alpha(opacity=#{$value * 100});
+    opacity: $value;
+}
+
+@mixin inline-block () {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+
+@mixin transition ($prop, $dur, $timing, $del) {
+    -webkit-transition: $prop $dur $timing $del;
+    -moz-transition: $prop $dur $timing $del;
+    -o-transition: $prop $dur $timing $del;
+    transition: $prop $dur $timing $del;
+}
+
+
+// Media
+// ---------------------------------------
+@mixin media-mobile () {
+    @media screen and (max-width: 600px) {
+        @content
+    }
+}
+
+
+// Helpers
+// ---------------------------------------
+
+@mixin font-size ($size: 1, $parentSize: 1.125) {
+    font-size: $size + 0em; // font-size: 0rem + $size/$parentSize;
+}
+
+
+
+@mixin hidden () {
+    left: -99999px;
+    position: absolute;
+    top: -99999px;
+}

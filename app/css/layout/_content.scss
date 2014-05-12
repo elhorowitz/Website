@@ -1,0 +1,61 @@
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.square {
+  @include inline-block;
+
+  height: 50%;
+  position: relative;
+  width: 50%;
+
+  header { margin-bottom: 1.5em; }
+
+  .content-wrapper { @include transition (visibility, .15s, ease, .15s)}
+
+  &:hover { 
+    .content-wrapper { visibility: visible; }
+  }
+}
+
+.content-wrapper {
+  height: 100%;
+  padding: 2.5em;
+  visibility: hidden;
+}
+
+.content { 
+
+  text-align: center; 
+
+  .date {
+    font-style: italic;
+    line-height: 2;
+  }
+}
+
+.more {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+// Collapsed
+// ---------------------------------------
+
+.big {
+  display: none;
+}
+
+
+// Expanded
+// ---------------------------------------
+
+.expanded .close {
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
