@@ -6,18 +6,14 @@
 @import "base/_reset";
 @import "base/_variables";
 @import "base/_mixins";
-@import "base/_grid";
 @import "base/_typography";
 
 @import "component/_button";
 @import "component/_photo";
 
 @import "layout/_global";
+@import "layout/_grid";
+@import "layout/_header";
 @import "layout/_content";
-@import "layout/_about";
-@import "layout/_portfolio";
-@import "layout/_resume";
-@import "layout/_contact";
 @import "layout/_footer";
-
-@import "base/_media-queries";
+@import "layout/_media-queries";

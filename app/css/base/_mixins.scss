@@ -6,12 +6,6 @@
     border-radius: $value;
 }
 
-@mixin opacity ($value) {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value * 100})";
-    filter: alpha(opacity=#{$value * 100});
-    opacity: $value;
-}
-
 @mixin inline-block () {
     display: -moz-inline-stack;
     display: inline-block;
@@ -20,12 +14,13 @@
     *display: inline;
 }
 
-@mixin transition ($prop, $dur, $timing, $del) {
-    -webkit-transition: $prop $dur $timing $del;
-    -moz-transition: $prop $dur $timing $del;
-    -o-transition: $prop $dur $timing $del;
-    transition: $prop $dur $timing $del;
+@mixin opacity ($value) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value * 100})";
+    filter: alpha(opacity=#{$value * 100});
+    opacity: $value;
 }
+
+
 
 
 // Media

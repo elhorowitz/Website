@@ -20,8 +20,9 @@
 
   </head>
   <body>
-    <div class="main">
-      <section class="square about">
+    <section class="main">
+
+      <section class="square about" role="banner">
         <div class="content-wrapper">
           <header>
             <h1>erica horowitz</h1>
@@ -31,20 +32,83 @@
       </section><!-- 
 
        --><section class="square portfolio">
-        <div class="content-wrapper">
-          <header>
-            <h1>her work</h1>
-          </header>
-          <div class="content ">
-            <h2 class="project">What Should We Watch?</h2>
-            <h3 class="type">UX Design Exercise</h3>
-            <p class="date">March 2014</p>
-            <h2 class="more">[ click for more information ]</h2>
+        <div class="content-wrapper" aria-live="polite">
+          <div class="front"></div>
+          <div class="back">
+            <header>
+              <h1>her work</h1>
+            </header>
+            <div class="content">
+              <h2 class="title">What Should We Watch?</h2>
+              <h3 class="tag">UX Design Exercise</h3>
+              <p class="date">March 2014</p>
+              <p class="more">[ <a href="#portfolio">click for more information</a> ]</p>
+            </div>
           </div>
         </div>
       </section><!-- 
 
        --><section class="square resume">
+        <div class="content-wrapper" aria-live="polite">
+          <div class="front"></div>
+          <div class="back">
+            <header>
+              <h1>her experience</h1>
+            </header>
+            <div class="content">
+              <h2 class="title">Fresh Tilled Soil</h2>
+              <h3 class="tag">user experience apprentice</h3>
+              <p class="date">March 2014 - current</p>
+              <p class="more">[ <a href="#resume">click for more information</a> ]</p>
+            </div>
+          </div>
+        </div>
+      </section><!-- 
+
+       --><section class="square contact">
+        <div class="content-wrapper" aria-live="polite">
+          <div class="front"></div>
+          <div class="back">
+            <header>
+              <h1>contact her</h1>
+            </header>
+            <ul class="content">
+              <div class="row">
+                <li><a href="http://www.linkedin.com/pub/erica-horowitz/25/264/241" alt="linkedin"><div class="linkedin"></div><div class="note">Linked In</div></a></li>
+                <li><a href="https://github.com/elhorowitz" alt="github"><div class="git"></div><div class="note">GitHub</div></a></li>
+              </div>
+              <div class="row">
+                <li><a href="https://twitter.com/ElHorah" alt="twitter"><div class="twitter"></div><div class="note">Twitter</div></a></li>
+                <li><a href="mailto:ericalhorowitz@gmail.com" alt="email"><div class="email"></div><div class="note">Email</div></a></li>
+              </div>
+            </ul>
+            <p class="more">[ <a href="#contact">click for more information</a> ]</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="details">
+      <section class="portfolio big">
+        <a name="portfolio">
+        <div class="content-wrapper">
+          <header>
+            <h1>her work</h1>
+          </header>
+          <div class="content">
+            <h2 class="project">What Should We Watch?</h2>
+            <h3 class="type">UX Design Exercise</h3>
+            <p class="date">March 2014</p>
+          </div>
+        </div>
+        <div class="close">
+          top
+        </div> 
+      </section>
+
+      <!-- INCLUDE EXPANDED RESUME -->
+      <section class="resume big">
+        <a name="resume">
         <div class="content-wrapper">
           <header>
             <h1>her experience</h1>
@@ -53,12 +117,16 @@
             <h2 class="company">Fresh Tilled Soil</h2>
             <h3 class="position">user experience apprentice</h3>
             <p class="date">March 2014 - current</p>
-            <h2 class="more">[ click for more information ]</h2>
           </div>
         </div>
-      </section><!-- 
+        <div class="close">
+          top
+        </div> 
+      </section>
 
-       --><section class="square contact">
+      <!-- INCLUDE EXPANDED CONTACT -->
+      <section class="contact big">
+        <a name="contact">
         <div class="content-wrapper">
           <header>
             <h1>contact her</h1>
@@ -70,53 +138,20 @@
              --><li><a href="mailto:ericalhorowitz@gmail.com" alt="email"><div class="email"></div><div class="note">Email</div></a></li>
           </ul>
         </div>
-      </section>
-
-      <!-- INCLUDE EXPANDED PORTFOLIO -->
-      <section class="portfolio big">
-        <div class="content-wrapper">
-          <header>
-            <h1>her work</h1>
-          </header>
-          <div class="content">
-            <h2 class="project">What Should We Watch?</h2>
-            <h3 class="type">UX Design Exercise</h3>
-            <p class="date">March 2014</p>
-            <h2 class="more">[ click for more information ]</h2>
-          </div>
-        </div>
         <div class="close">
-          X
+          top
         </div> 
       </section>
 
-      <!-- INCLUDE EXPANDED RESUME -->
-      <section class="resume big">
-        <div class="content-wrapper">
-          <header>
-            <h1>her experience</h1>
-          </header>
-          <div class="content">
-            <h2 class="company">Fresh Tilled Soil</h2>
-            <h3 class="position">user experience apprentice</h3>
-            <p class="date">March 2014 - current</p>
-            <h2 class="more">[ click for more information ]</h2>
-          </div>
-        </div>
-        <div class="close">
-          X
-        </div> 
-      </section>
+    </section>
 
-    </div>
-
-    <footer class="footer">
+    <footer class="footer" role="footer">
       <p>2014 <span>Erica Horowitz</span></p>
     </footer>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- <script src="js/vendor.js"></script> -->
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
   </body>
 </html>
