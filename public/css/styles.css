@@ -85,40 +85,65 @@ h1 {
 }
 
 /* line 19, ../../app/css/base/_typography.scss */
+.content h1 {
+  font-size: 2em;
+  font-family: "Josefin Slab", serif;
+  font-weight: 300;
+  text-transform: none;
+}
+
+/* line 30, ../../app/css/base/_typography.scss */
 h2 {
   font-size: 2em;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
-/* line 28, ../../app/css/base/_typography.scss */
+/* line 39, ../../app/css/base/_typography.scss */
+.content h2 {
+  font-size: 1.5em;
+}
+
+/* line 43, ../../app/css/base/_typography.scss */
 h3 {
   font-size: 1.5em;
   font-family: "Josefin Slab", serif;
   font-weight: 300;
 }
 
-/* line 37, ../../app/css/base/_typography.scss */
+/* line 52, ../../app/css/base/_typography.scss */
+.content h3 {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+/* line 61, ../../app/css/base/_typography.scss */
 p {
   font-size: 1em;
   font-family: "Josefin Slab", serif;
   font-weight: 300;
 }
 
-/* line 46, ../../app/css/base/_typography.scss */
+/* line 70, ../../app/css/base/_typography.scss */
 small {
   font-size: 0.875em;
 }
 
-/* line 50, ../../app/css/base/_typography.scss */
+/* line 74, ../../app/css/base/_typography.scss */
 a {
   color: #faf5d3;
   text-decoration: none;
 }
 
-/* line 55, ../../app/css/base/_typography.scss */
-a:hover {
+/* line 79, ../../app/css/base/_typography.scss */
+.content-wrapper a:hover {
   border-bottom: 1px solid #faf5d3;
+}
+
+/* line 83, ../../app/css/base/_typography.scss */
+.center {
+  text-align: center;
 }
 
 /* line 1, ../../app/css/layout/_global.scss */
@@ -138,6 +163,11 @@ html, body {
 }
 
 /* line 15, ../../app/css/layout/_global.scss */
+header {
+  margin-bottom: 25px;
+}
+
+/* line 19, ../../app/css/layout/_global.scss */
 * {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -147,7 +177,7 @@ html, body {
   /* Opera/IE 8+ */
 }
 
-/* line 21, ../../app/css/layout/_global.scss */
+/* line 25, ../../app/css/layout/_global.scss */
 .hidden {
   left: -9999px;
   position: absolute;
@@ -155,20 +185,20 @@ html, body {
 }
 
 /*---- CLEAR FIX ----*/
-/* line 28, ../../app/css/layout/_global.scss */
-.clearfix:before,
-.clearfix:after {
+/* line 32, ../../app/css/layout/_global.scss */
+.row:before,
+.row:after {
   content: " ";
   display: table;
 }
 
-/* line 34, ../../app/css/layout/_global.scss */
-.clearfix:after {
+/* line 38, ../../app/css/layout/_global.scss */
+.row:after {
   clear: both;
 }
 
-/* line 38, ../../app/css/layout/_global.scss */
-.clearfix {
+/* line 42, ../../app/css/layout/_global.scss */
+.row {
   *zoom: 1;
 }
 
@@ -184,8 +214,70 @@ html, body {
 }
 
 /* line 11, ../../app/css/layout/_grid.scss */
-.row {
+.col {
   display: block;
+  float: left;
+  margin: 0 1.01%;
+}
+
+/* line 17, ../../app/css/layout/_grid.scss */
+.span-one-of-ten {
+  width: 7.98%;
+}
+
+/* line 19, ../../app/css/layout/_grid.scss */
+.span-two-of-ten {
+  width: 17.98%;
+}
+
+/* line 21, ../../app/css/layout/_grid.scss */
+.span-three-of-ten {
+  width: 27.98%;
+}
+
+/* line 23, ../../app/css/layout/_grid.scss */
+.span-four-of-ten {
+  width: 37.98%;
+}
+
+/* line 25, ../../app/css/layout/_grid.scss */
+.span-five-of-ten {
+  width: 47.98%;
+}
+
+/* line 27, ../../app/css/layout/_grid.scss */
+.span-six-of-ten {
+  width: 57.98%;
+}
+
+/* line 29, ../../app/css/layout/_grid.scss */
+.span-seven-of-ten {
+  width: 67.98%;
+}
+
+/* line 31, ../../app/css/layout/_grid.scss */
+.span-eight-of-ten {
+  width: 77.98%;
+}
+
+/* line 33, ../../app/css/layout/_grid.scss */
+.span-nine-of-ten {
+  width: 87.98%;
+}
+
+/* line 35, ../../app/css/layout/_grid.scss */
+.span-ten-of-ten {
+  width: 97.98%;
+}
+
+/* line 37, ../../app/css/layout/_grid.scss */
+.whole {
+  width: 100%;
+}
+
+/* line 39, ../../app/css/layout/_grid.scss */
+.half {
+  width: 50%;
 }
 
 /* line 4, ../../app/css/layout/_content.scss */
@@ -216,14 +308,14 @@ html, body {
   background: #cdb739;
 }
 /* line 27, ../../app/css/layout/_content.scss */
-.contact .content li {
+.contact .back li {
   display: inline-block;
   width: 40%;
   margin: 10px auto;
   position: relative;
 }
 /* line 34, ../../app/css/layout/_content.scss */
-.contact .content li:hover .note {
+.contact .back li:hover .note {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
   -moz-opacity: 1;
   -khtml-opacity: 1;
@@ -266,10 +358,6 @@ html, body {
   padding: 30px;
 }
 /* line 81, ../../app/css/layout/_content.scss */
-.content-wrapper header {
-  margin-bottom: 25px;
-}
-/* line 85, ../../app/css/layout/_content.scss */
 .content-wrapper .back {
   height: 100%;
   margin: auto;
@@ -281,7 +369,7 @@ html, body {
   text-align: center;
   width: 80%;
 }
-/* line 98, ../../app/css/layout/_content.scss */
+/* line 94, ../../app/css/layout/_content.scss */
 .content-wrapper .more {
   bottom: 0;
   font-family: "Raleway", sans-serif;
@@ -289,7 +377,7 @@ html, body {
   position: absolute;
   width: 100%;
 }
-/* line 107, ../../app/css/layout/_content.scss */
+/* line 103, ../../app/css/layout/_content.scss */
 .content-wrapper:hover .back {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
   -moz-opacity: 1;
@@ -300,13 +388,57 @@ html, body {
   -o-transition: all 0.4s ease;
 }
 
-/* line 124, ../../app/css/layout/_content.scss */
+/* line 120, ../../app/css/layout/_content.scss */
 .details {
-  height: 300%;
+  height: 200%;
 }
-/* line 127, ../../app/css/layout/_content.scss */
+/* line 123, ../../app/css/layout/_content.scss */
 .details .big {
-  height: 33.333%;
+  height: 50%;
+  position: relative;
+}
+/* line 128, ../../app/css/layout/_content.scss */
+.details .content-wrapper {
+  position: relative;
+}
+/* line 131, ../../app/css/layout/_content.scss */
+.details .content-wrapper > header {
+  height: 15%;
+  margin: 0;
+}
+
+/* line 136, ../../app/css/layout/_content.scss */
+.side-nav {
+  border-right: 1px solid #faf5d3;
+  height: 85%;
+  padding-top: 30px;
+}
+/* line 141, ../../app/css/layout/_content.scss */
+.side-nav li {
+  margin-bottom: 30px;
+}
+/* line 145, ../../app/css/layout/_content.scss */
+.side-nav h3 {
+  border-bottom: 1px solid #42a482;
+  cursor: pointer;
+  line-height: 1;
+}
+/* line 151, ../../app/css/layout/_content.scss */
+.side-nav h3:hover {
+  text-decoration: underline;
+}
+
+/* line 154, ../../app/css/layout/_content.scss */
+.content {
+  height: 85%;
+}
+/* line 161, ../../app/css/layout/_content.scss */
+.content .proj-details {
+  float: right;
+}
+/* line 165, ../../app/css/layout/_content.scss */
+.content .pictures {
+  float: right;
 }
 
 /* line 1, ../../app/css/layout/_footer.scss */
