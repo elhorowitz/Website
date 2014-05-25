@@ -367,8 +367,8 @@ header {
   opacity: 0;
 }
 /* line 58, ../../app/css/layout/_content.scss */
-.contact .linkedin, .contact .git, .contact .twitter, .contact .email {
-  background: url("/public/img/sprites.png") no-repeat -9.0625em 0;
+.contact .linkedin, .contact .git, .contact .twitter, .contact .email, .contact .blog {
+  background: url("/public/img/sprites.png") no-repeat -193px 0;
   height: 2em;
   margin: auto;
   position: relative;
@@ -376,23 +376,27 @@ header {
 }
 /* line 66, ../../app/css/layout/_content.scss */
 .contact .git {
-  background-position: -6em 0;
+  background-position: -144px 0;
 }
 /* line 71, ../../app/css/layout/_content.scss */
 .contact .twitter {
-  background-position: -3em 0;
+  background-position: -96px 0;
 }
 /* line 76, ../../app/css/layout/_content.scss */
 .contact .email {
   background-position: 0 0;
 }
+/* line 81, ../../app/css/layout/_content.scss */
+.contact .blog {
+  background-position: -48px 0;
+}
 
-/* line 82, ../../app/css/layout/_content.scss */
+/* line 87, ../../app/css/layout/_content.scss */
 .content-wrapper {
   height: 100%;
   padding: 30px;
 }
-/* line 86, ../../app/css/layout/_content.scss */
+/* line 91, ../../app/css/layout/_content.scss */
 .content-wrapper .back {
   height: 100%;
   margin: auto;
@@ -404,7 +408,7 @@ header {
   text-align: center;
   width: 80%;
 }
-/* line 99, ../../app/css/layout/_content.scss */
+/* line 104, ../../app/css/layout/_content.scss */
 .content-wrapper .more {
   bottom: 0;
   font-family: "Raleway", sans-serif;
@@ -412,7 +416,7 @@ header {
   position: absolute;
   width: 100%;
 }
-/* line 108, ../../app/css/layout/_content.scss */
+/* line 113, ../../app/css/layout/_content.scss */
 .content-wrapper:hover .back {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
   -moz-opacity: 1;
@@ -423,17 +427,17 @@ header {
   -o-transition: all 0.4s ease;
 }
 
-/* line 127, ../../app/css/layout/_content.scss */
+/* line 132, ../../app/css/layout/_content.scss */
 .details .big {
   position: relative;
 }
-/* line 131, ../../app/css/layout/_content.scss */
+/* line 136, ../../app/css/layout/_content.scss */
 .details .content-wrapper {
   margin: auto;
   max-width: 990px;
   position: relative;
 }
-/* line 136, ../../app/css/layout/_content.scss */
+/* line 141, ../../app/css/layout/_content.scss */
 .details .content-wrapper:before {
   content: '';
   display: inline-block;
@@ -441,54 +445,54 @@ header {
   vertical-align: middle;
 }
 
-/* line 146, ../../app/css/layout/_content.scss */
+/* line 151, ../../app/css/layout/_content.scss */
 .side-nav {
   border-right: 1px solid #faf5d3;
   padding-top: 30px;
 }
-/* line 150, ../../app/css/layout/_content.scss */
+/* line 155, ../../app/css/layout/_content.scss */
 .side-nav li {
   margin-bottom: 30px;
 }
-/* line 154, ../../app/css/layout/_content.scss */
+/* line 159, ../../app/css/layout/_content.scss */
 .side-nav h3 {
   border-bottom: 1px solid transparent;
   cursor: pointer;
   line-height: 1;
 }
-/* line 160, ../../app/css/layout/_content.scss */
+/* line 165, ../../app/css/layout/_content.scss */
 .side-nav h3:hover {
   text-decoration: underline;
 }
 
-/* line 163, ../../app/css/layout/_content.scss */
+/* line 168, ../../app/css/layout/_content.scss */
 .content {
   height: 85%;
 }
-/* line 170, ../../app/css/layout/_content.scss */
+/* line 175, ../../app/css/layout/_content.scss */
 .content .proj-details {
   float: right;
 }
-/* line 174, ../../app/css/layout/_content.scss */
+/* line 179, ../../app/css/layout/_content.scss */
 .content .pictures {
   float: right;
 }
-/* line 178, ../../app/css/layout/_content.scss */
+/* line 183, ../../app/css/layout/_content.scss */
 .content .timeline {
   float: right;
   margin: 0 0 0 2.02%;
 }
-/* line 182, ../../app/css/layout/_content.scss */
+/* line 187, ../../app/css/layout/_content.scss */
 .content .timeline h3 {
   border-bottom: 1px solid #faf5d3;
 }
 
-/* line 187, ../../app/css/layout/_content.scss */
+/* line 192, ../../app/css/layout/_content.scss */
 .description a {
   border-bottom: 1px solid #faf5d3;
 }
 
-/* line 192, ../../app/css/layout/_content.scss */
+/* line 197, ../../app/css/layout/_content.scss */
 .list li {
   border: none;
   line-height: 1.3;
@@ -496,14 +500,14 @@ header {
   padding-bottom: 1em;
 }
 
-/* line 199, ../../app/css/layout/_content.scss */
+/* line 204, ../../app/css/layout/_content.scss */
 .close {
   cursor: pointer;
   left: 15px;
   position: fixed;
   top: 60px;
 }
-/* line 205, ../../app/css/layout/_content.scss */
+/* line 210, ../../app/css/layout/_content.scss */
 .close:hover {
   text-decoration: underline;
 }
