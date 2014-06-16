@@ -479,22 +479,14 @@ header.job-title {
   width: 50%;
 }
 
-<<<<<<< HEAD
-/* line 5, ../../app/css/layout/_header.scss */
-=======
 /* line 4, ../../app/css/layout/_header.scss */
->>>>>>> master
 .square-wrapper {
   display: inline-block;
   height: 100%;
   text-align: center;
   width: 100%;
 }
-<<<<<<< HEAD
-/* line 11, ../../app/css/layout/_header.scss */
-=======
 /* line 10, ../../app/css/layout/_header.scss */
->>>>>>> master
 .square-wrapper .back {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -505,13 +497,6 @@ header.job-title {
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
 }
-<<<<<<< HEAD
-/* line 22, ../../app/css/layout/_header.scss */
-.square-wrapper header {
-  margin-bottom: 30px;
-}
-/* line 24, ../../app/css/layout/_header.scss */
-=======
 /* line 21, ../../app/css/layout/_header.scss */
 .square-wrapper header {
   margin-bottom: 30px;
@@ -538,27 +523,18 @@ header.job-title {
   right: -0.4em;
 }
 /* line 46, ../../app/css/layout/_header.scss */
->>>>>>> master
 .square-wrapper .more {
   font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
 }
-<<<<<<< HEAD
-/* line 29, ../../app/css/layout/_header.scss */
-=======
 /* line 51, ../../app/css/layout/_header.scss */
->>>>>>> master
 .square-wrapper:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-<<<<<<< HEAD
-/* line 36, ../../app/css/layout/_header.scss */
-=======
 /* line 58, ../../app/css/layout/_header.scss */
->>>>>>> master
 .square-wrapper:hover .back {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
