@@ -1,0 +1,16 @@
+.footer {
+  height: 2em;
+  width: 100%;
+
+  p {
+    color: $green;
+    line-height: 2.5;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+  span {
+    font-size: 1.1em;
+  }
+}

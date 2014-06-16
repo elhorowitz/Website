@@ -1,0 +1,140 @@
+/* styles for mobile */
+@media screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (max-width: 846px) {
+
+  .square h1 { font-size: 2em;}
+  .square h2 { font-size: 1.5em;}
+  .side-nav .title { font-size: 1.3em; }
+  
+  .contact ul { width: 275px; }
+  .icon {
+    width: 45px;
+    height: 45px;
+
+    &:before { font-size: 23px; }
+  }
+  
+}
+
+@media only screen and (max-width: 668px) {
+  body {-webkit-text-size-adjust: none;}
+  .span-one-of-ten { width: 100%; }
+  .span-two-of-ten { width: 100%; }
+  .span-three-of-ten { width: 100%; }
+  .span-four-of-ten { width: 100%; }
+  .span-five-of-ten { width: 100%; }
+  .span-six-of-ten { width: 100%; }
+  .span-seven-of-ten { width: 100%; }
+  .span-eight-of-ten { width: 100%; }
+  .span-nine-of-ten { width: 100%; }
+  .span-ten-of-ten { width: 100%; }
+
+  .right { text-align: left; }
+
+  .main { height: auto; }
+
+  .square.about,
+  .square.contact { 
+    padding-top: 2em; 
+    width: 100%; 
+
+    .content-wrapper { padding: 30px 0;}
+
+    header { 
+      margin-bottom: 0;
+      position: relative; 
+      right: auto; 
+      text-align: center;
+    }
+
+    .front header { display: none; }
+    .contact-list { padding-top: 1em; }
+  }
+
+  header { margin-bottom: 2em;}
+
+  h1, [class*=" "] h1 { font-size: 2em;}
+  h2, [class*=" "] h2 { font-size: 1.5em;}
+
+  .square.portfolio,
+  .square.resume { display: none;}
+
+  .content-wrapper { padding: 0px 10px 50px; }
+
+  .content { 
+    .proj-details { 
+      float: none; 
+      margin-bottom: 1.5em;
+
+      .tag, .date { display: inline-block; }
+      .tag:after { content: ", "; }
+    }
+  }
+
+
+  .job a{
+    text-decoration: underline;
+
+    &:hover { background: $resume-accent-color; }
+
+    &:before { 
+      content: none;
+    }
+  }
+
+  #nav { display: none }
+
+  .tinynav { 
+    -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+    background: $portfolio-accent-color;
+    border: 1px solid $white;
+    color: $white;
+    display: block;
+    font: {
+      family: inherit;
+      size: 1em;
+      weight: inherit;
+    }
+    height: 60px;
+    opacity: 1;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .side-nav:after {
+    border-left: 1px solid $white;
+    content: "\e600";
+    display: block;
+    font-family: 'icomoon';
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    vertical-align: top;
+    width: 9%;
+  }
+
+  .close { 
+    left: auto;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    width: 90px; 
+  }
+
+  .section-top a:after {
+    content: "[ Top of Section ]";
+    font-size: 16px;
+    display: block;
+    margin-top: -24px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .content .timeline { margin-bottom: 2em; }
+}

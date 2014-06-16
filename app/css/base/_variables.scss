@@ -1,0 +1,29 @@
+// Colors
+// ---------------------------------------
+$blue: #47584D;
+$green: #42A482;
+$red: #BE3400;
+$yellow: #CDB739;
+$white: #FAF5D3;
+
+$about-color: $blue;
+$portfolio-color: $green;
+$portfolio-accent-color: darken( $portfolio-color, 12% );
+$resume-color: $red;
+$resume-accent-color: darken( $resume-color, 10% );
+$contact-color: $yellow;
+
+
+// Fonts
+// ---------------------------------------
+$font-sans: 'Raleway', sans-serif;
+$font-serif: 'Josefin Slab', serif;
+
+// GRID
+// ---------------------------------------
+$num-cols: 10;
+$gutter: .0101;
+$col-width: (1-($gutter * 2 * $num-cols)) / $num-cols;
+
+// MISC
+// ---------------------------------------

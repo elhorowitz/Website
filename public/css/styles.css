@@ -33,7 +33,7 @@ body {
 }
 
 /* line 9, ../../app/css/base/_reset.scss */
-ol, ul {
+ul {
   list-style: none;
 }
 
@@ -88,7 +88,6 @@ h1 {
 .content h1 {
   font-size: 2em;
   font-family: "Josefin Slab", serif;
-  font-weight: 300;
   text-transform: none;
 }
 
@@ -100,101 +99,250 @@ h2 {
 }
 
 /* line 39, ../../app/css/base/_typography.scss */
-.content h2 {
+.big h2 {
   font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
-/* line 43, ../../app/css/base/_typography.scss */
+/* line 48, ../../app/css/base/_typography.scss */
 h3 {
   font-size: 1.5em;
   font-family: "Josefin Slab", serif;
   font-weight: 300;
 }
 
-/* line 52, ../../app/css/base/_typography.scss */
+/* line 57, ../../app/css/base/_typography.scss */
 .content h3 {
   font-size: 1em;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
-/* line 61, ../../app/css/base/_typography.scss */
+/* line 66, ../../app/css/base/_typography.scss */
 p {
   font-size: 1em;
-  font-family: "Josefin Slab", serif;
-  font-weight: 300;
-}
-
-/* line 70, ../../app/css/base/_typography.scss */
-.content p {
   margin-bottom: 1em;
 }
 
-/* line 72, ../../app/css/base/_typography.scss */
-li {
-  font-size: 1em;
+/* line 71, ../../app/css/base/_typography.scss */
+.square p {
   font-family: "Josefin Slab", serif;
   font-weight: 300;
 }
 
-/* line 81, ../../app/css/base/_typography.scss */
+/* line 76, ../../app/css/base/_typography.scss */
+li {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+/* line 85, ../../app/css/base/_typography.scss */
+ol li {
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+}
+
+/* line 90, ../../app/css/base/_typography.scss */
+article ul li,
+li li {
+  list-style: circle;
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+}
+
+/* line 97, ../../app/css/base/_typography.scss */
 a {
   color: #faf5d3;
   text-decoration: none;
 }
 
-/* line 86, ../../app/css/base/_typography.scss */
-.content-wrapper a:hover {
+/* line 102, ../../app/css/base/_typography.scss */
+.job a {
+  height: 100%;
+  position: relative;
+}
+/* line 106, ../../app/css/base/_typography.scss */
+.job a::before {
+  background: #8b2600;
   border-bottom: 1px solid #faf5d3;
+  content: '';
+  display: block;
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+  width: 100%;
+  z-index: -1;
+}
+/* line 121, ../../app/css/base/_typography.scss */
+.job a:hover::before {
+  border-top: 1px solid #faf5d3;
+  height: 100%;
 }
 
-/* line 90, ../../app/css/base/_typography.scss */
+/* line 127, ../../app/css/base/_typography.scss */
 small {
   font-size: 0.875em;
 }
 
-/* line 94, ../../app/css/base/_typography.scss */
+/* line 131, ../../app/css/base/_typography.scss */
 .strong {
   font-family: "Raleway", sans-serif;
 }
 
-/* line 98, ../../app/css/base/_typography.scss */
+/* line 135, ../../app/css/base/_typography.scss */
 .center {
   text-align: center;
 }
 
-/* line 102, ../../app/css/base/_typography.scss */
+/* line 139, ../../app/css/base/_typography.scss */
 .right {
   text-align: right;
 }
 
-/* line 106, ../../app/css/base/_typography.scss */
+/* line 143, ../../app/css/base/_typography.scss */
 .left {
   text-align: left;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/public/fonts/icomoon.eot?c2sh6h");
+  src: url("/public/fonts/icomoon.eot?#iefixc2sh6h") format("embedded-opentype"), url("/public/fonts/icomoon.woff?c2sh6h") format("woff"), url("/public/fonts/icomoon.ttf?c2sh6h") format("truetype"), url("/public/fonts/icomoon.svg?c2sh6h#icomoon") format("svg");
+}
+/* line 14, ../../app/css/component/_icon.scss */
+[class^="icon-"], [class*=" icon-"] {
+  color: #faf5d3;
+  font-family: 'icomoon';
+  font-size: 2em;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1.5;
+  speak: none;
+  text-transform: none;
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Effect 9 */
+/* line 37, ../../app/css/component/_icon.scss */
+.icon {
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0px;
+  height: 64px;
+  position: relative;
+  text-align: center;
+  width: 64px;
+  z-index: 1;
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+
+/* line 53, ../../app/css/component/_icon.scss */
+.icon:after {
+  border-radius: 50%;
+  content: '';
+  box-shadow: 0 0 0 3px #faf5d3;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 100%;
+  left: 0;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* line 73, ../../app/css/component/_icon.scss */
+.icon:before {
+  display: block;
+  font-size: 32px;
+  font-style: normal;
+  font-transform: none;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 2;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 89, ../../app/css/component/_icon.scss */
+.icon-mail:before {
+  content: "\e603";
+}
+
+/* line 92, ../../app/css/component/_icon.scss */
+.icon-blog:before {
+  content: "\e602";
+}
+
+/* line 95, ../../app/css/component/_icon.scss */
+.icon-twitter:before {
+  content: "\e601";
+}
+
+/* line 98, ../../app/css/component/_icon.scss */
+.icon-github:before {
+  content: "\e606";
+}
+
+/* line 101, ../../app/css/component/_icon.scss */
+.icon-linkedin:before {
+  content: "\e609";
+}
+
+/* line 104, ../../app/css/component/_icon.scss */
+.icon-arrow-down:before {
+  content: "\e600";
 }
 
 /* line 1, ../../app/css/layout/_global.scss */
 html, body {
   background: #faf5d3;
   color: #faf5d3;
+  font-family: "Raleway", sans-serif;
   font-size: 100%;
+  font-weight: 200;
   height: 100%;
   line-height: 1.5;
   min-height: 39.375em;
   width: 100%;
 }
 
-/* line 11, ../../app/css/layout/_global.scss */
+/* line 15, ../../app/css/layout/_global.scss */
 .main {
   height: 100%;
+  border-bottom: 5px solid #47584d;
 }
 
-/* line 15, ../../app/css/layout/_global.scss */
+/* line 20, ../../app/css/layout/_global.scss */
 header {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+}
+/* line 23, ../../app/css/layout/_global.scss */
+header.job-title {
+  margin-bottom: 1em;
 }
 
-/* line 19, ../../app/css/layout/_global.scss */
+/* line 28, ../../app/css/layout/_global.scss */
 * {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -204,27 +352,41 @@ header {
   /* Opera/IE 8+ */
 }
 
-/* line 25, ../../app/css/layout/_global.scss */
+/* line 34, ../../app/css/layout/_global.scss */
 .hidden {
   left: -9999px;
   position: absolute;
   top: -9999px;
 }
 
+/* line 40, ../../app/css/layout/_global.scss */
+.stamp {
+  display: block;
+  height: 50px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 47, ../../app/css/layout/_global.scss */
+.stamp path {
+  fill: #47584d;
+  stroke: #47584d;
+}
+
 /*---- CLEAR FIX ----*/
-/* line 32, ../../app/css/layout/_global.scss */
+/* line 54, ../../app/css/layout/_global.scss */
 .row:before,
 .row:after {
   content: " ";
   display: table;
 }
 
-/* line 38, ../../app/css/layout/_global.scss */
+/* line 60, ../../app/css/layout/_global.scss */
 .row:after {
   clear: both;
 }
 
-/* line 42, ../../app/css/layout/_global.scss */
+/* line 64, ../../app/css/layout/_global.scss */
 .row {
   *zoom: 1;
 }
@@ -327,97 +489,169 @@ header {
 .portfolio {
   background: #42a482;
 }
-
-/* line 20, ../../app/css/layout/_content.scss */
-.resume {
-  background: #be3400;
+/* line 19, ../../app/css/layout/_content.scss */
+.portfolio .section-top a,
+.portfolio .close p,
+.portfolio .close:before {
+  border-bottom-color: #47584d;
+  color: #47584d;
 }
-/* line 23, ../../app/css/layout/_content.scss */
-.resume li {
-  border-right: 1px solid #faf5d3;
-  padding-bottom: 50px;
+/* line 26, ../../app/css/layout/_content.scss */
+.portfolio .close:after {
+  background: #47584d;
 }
 
 /* line 29, ../../app/css/layout/_content.scss */
+.resume {
+  background: #be3400;
+  z-index: 1;
+}
+/* line 33, ../../app/css/layout/_content.scss */
+.resume li.job {
+  border-right: 1px solid #faf5d3;
+  padding-bottom: 50px;
+}
+/* line 38, ../../app/css/layout/_content.scss */
+.resume li.list {
+  border: none;
+  line-height: 1.3;
+  list-style: circle;
+  padding-bottom: 0;
+}
+/* line 45, ../../app/css/layout/_content.scss */
+.resume .section-top a,
+.resume .close p,
+.resume .close:before,
+.resume .close:after {
+  border-bottom-color: #faf5d3;
+  color: #faf5d3;
+}
+/* line 53, ../../app/css/layout/_content.scss */
+.resume .close:after {
+  background: #faf5d3;
+}
+
+/* line 56, ../../app/css/layout/_content.scss */
 .contact {
   background: #cdb739;
 }
-/* line 32, ../../app/css/layout/_content.scss */
-.contact .back li {
+/* line 59, ../../app/css/layout/_content.scss */
+.contact .front {
   display: inline-block;
-  width: 40%;
-  margin: 10px auto;
-  position: relative;
+  vertical-align: middle;
 }
-/* line 39, ../../app/css/layout/_content.scss */
-.contact .back li:hover .note {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-}
-/* line 51, ../../app/css/layout/_content.scss */
-.contact .note {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  -moz-opacity: 0;
-  -khtml-opacity: 0;
-  opacity: 0;
-}
-/* line 58, ../../app/css/layout/_content.scss */
-.contact .linkedin, .contact .git, .contact .twitter, .contact .email, .contact .blog {
-  background: url("/public/img/sprites.png") no-repeat -193px 0;
-  height: 2em;
-  margin: auto;
-  position: relative;
-  width: 2em;
+/* line 64, ../../app/css/layout/_content.scss */
+.contact ul {
+  width: 350px;
 }
 /* line 66, ../../app/css/layout/_content.scss */
-.contact .git {
-  background-position: -144px 0;
+.contact .row {
+  width: 100%;
 }
-/* line 71, ../../app/css/layout/_content.scss */
-.contact .twitter {
-  background-position: -96px 0;
+/* line 70, ../../app/css/layout/_content.scss */
+.contact p a {
+  border-bottom: 1px solid #faf5d3;
+  font-size: 1.2em;
+  -webkit-transition: font-weight 0.2s;
+  -moz-transition: font-weight 0.2s;
+  -o-transition: font-weight 0.2s;
 }
-/* line 76, ../../app/css/layout/_content.scss */
-.contact .email {
-  background-position: 0 0;
+/* line 77, ../../app/css/layout/_content.scss */
+.contact p a:hover {
+  font-weight: 600;
 }
-/* line 81, ../../app/css/layout/_content.scss */
-.contact .blog {
-  background-position: -48px 0;
+/* line 82, ../../app/css/layout/_content.scss */
+.contact li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 25%;
+}
+/* line 90, ../../app/css/layout/_content.scss */
+.contact li:hover .icon:after {
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  opacity: 0.5;
+}
+/* line 98, ../../app/css/layout/_content.scss */
+.contact li:hover .icon {
+  box-shadow: 0 0 0 10px #faf5d3;
+}
+/* line 102, ../../app/css/layout/_content.scss */
+.contact li:hover .note {
+  font-weight: 600;
+}
+/* line 108, ../../app/css/layout/_content.scss */
+.contact .note {
+  line-height: 2.2;
+  padding: .5em 0 1em;
+  -webkit-transition: font-weight 0.2s;
+  -moz-transition: font-weight 0.2s;
+  -o-transition: font-weight 0.2s;
+}
+/* line 117, ../../app/css/layout/_content.scss */
+.contact .content-wrapper .contact-list {
+  margin: auto;
+  position: relative;
+}
+/* line 122, ../../app/css/layout/_content.scss */
+.contact p {
+  text-align: center;
+}
+/* line 124, ../../app/css/layout/_content.scss */
+.contact .section-top a,
+.contact .close p,
+.contact .close:before {
+  border-bottom-color: #47584d;
+  color: #47584d;
+}
+/* line 131, ../../app/css/layout/_content.scss */
+.contact .close:after {
+  background: #47584d;
 }
 
-/* line 87, ../../app/css/layout/_content.scss */
+/* line 134, ../../app/css/layout/_content.scss */
 .content-wrapper {
   height: 100%;
-  padding: 30px;
+  padding: 50px;
 }
-/* line 91, ../../app/css/layout/_content.scss */
-.content-wrapper .back {
+
+/* line 139, ../../app/css/layout/_content.scss */
+.square-wrapper {
+  display: inline-block;
   height: 100%;
-  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+/* line 145, ../../app/css/layout/_content.scss */
+.square-wrapper .back {
+  display: inline-block;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -moz-opacity: 0;
   -khtml-opacity: 0;
   opacity: 0;
-  position: relative;
-  text-align: center;
-  width: 80%;
+  vertical-align: middle;
 }
-/* line 104, ../../app/css/layout/_content.scss */
-.content-wrapper .more {
-  bottom: 0;
+/* line 154, ../../app/css/layout/_content.scss */
+.square-wrapper header {
+  margin-bottom: 30px;
+}
+/* line 156, ../../app/css/layout/_content.scss */
+.square-wrapper .more {
   font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
-  position: absolute;
-  width: 100%;
 }
-/* line 113, ../../app/css/layout/_content.scss */
-.content-wrapper:hover .back {
+/* line 161, ../../app/css/layout/_content.scss */
+.square-wrapper:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 169, ../../app/css/layout/_content.scss */
+.square-wrapper:hover .back {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
   -moz-opacity: 1;
   -khtml-opacity: 1;
@@ -427,17 +661,23 @@ header {
   -o-transition: all 0.4s ease;
 }
 
-/* line 132, ../../app/css/layout/_content.scss */
-.details .big {
+/* line 187, ../../app/css/layout/_content.scss */
+.details {
   position: relative;
 }
-/* line 136, ../../app/css/layout/_content.scss */
+/* line 190, ../../app/css/layout/_content.scss */
+.details .big {
+  border-bottom: 5px solid #47584d;
+  margin-top: 5px;
+  position: relative;
+}
+/* line 196, ../../app/css/layout/_content.scss */
 .details .content-wrapper {
   margin: auto;
   max-width: 990px;
   position: relative;
 }
-/* line 141, ../../app/css/layout/_content.scss */
+/* line 201, ../../app/css/layout/_content.scss */
 .details .content-wrapper:before {
   content: '';
   display: inline-block;
@@ -445,71 +685,145 @@ header {
   vertical-align: middle;
 }
 
-/* line 151, ../../app/css/layout/_content.scss */
+/* line 211, ../../app/css/layout/_content.scss */
+.tinynav {
+  display: none;
+}
+
+/* line 213, ../../app/css/layout/_content.scss */
 .side-nav {
-  border-right: 1px solid #faf5d3;
-  padding-top: 30px;
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
 }
-/* line 155, ../../app/css/layout/_content.scss */
+/* line 218, ../../app/css/layout/_content.scss */
 .side-nav li {
-  margin-bottom: 30px;
+  display: inline-block;
+  height: 115px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
 }
-/* line 159, ../../app/css/layout/_content.scss */
-.side-nav h3 {
-  border-bottom: 1px solid transparent;
+/* line 225, ../../app/css/layout/_content.scss */
+.side-nav li::before {
+  background: #30785f;
+  border-bottom: 2px solid #faf5d3;
+  border-left: 2px solid #faf5d3;
+  content: '';
+  display: block;
+  height: 0px;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+  width: 100%;
+}
+/* line 238, ../../app/css/layout/_content.scss */
+.side-nav li.selected::before, .side-nav li:hover::before {
+  height: 100%;
+}
+/* line 245, ../../app/css/layout/_content.scss */
+.side-nav .title {
   cursor: pointer;
   line-height: 1;
 }
-/* line 165, ../../app/css/layout/_content.scss */
-.side-nav h3:hover {
-  text-decoration: underline;
+/* line 250, ../../app/css/layout/_content.scss */
+.side-nav .nav-item-wrapper {
+  display: block;
+  left: 0;
+  position: absolute;
+  padding: 0 10px;
+  top: 10px;
+  width: 100%;
 }
 
-/* line 168, ../../app/css/layout/_content.scss */
+/* line 261, ../../app/css/layout/_content.scss */
 .content {
   height: 85%;
 }
-/* line 175, ../../app/css/layout/_content.scss */
+/* line 264, ../../app/css/layout/_content.scss */
 .content .proj-details {
   float: right;
 }
-/* line 179, ../../app/css/layout/_content.scss */
+/* line 268, ../../app/css/layout/_content.scss */
 .content .pictures {
   float: right;
 }
-/* line 183, ../../app/css/layout/_content.scss */
+/* line 271, ../../app/css/layout/_content.scss */
+.content .pictures img {
+  border: 1px solid #faf5d3;
+  margin: 1%;
+  padding: 1%;
+  max-width: 100%;
+}
+/* line 279, ../../app/css/layout/_content.scss */
 .content .timeline {
   float: right;
   margin: 0 0 0 2.02%;
 }
-/* line 187, ../../app/css/layout/_content.scss */
+/* line 283, ../../app/css/layout/_content.scss */
 .content .timeline h3 {
   border-bottom: 1px solid #faf5d3;
 }
 
-/* line 192, ../../app/css/layout/_content.scss */
-.description a {
-  border-bottom: 1px solid #faf5d3;
-}
-
-/* line 197, ../../app/css/layout/_content.scss */
-.list li {
-  border: none;
-  line-height: 1.3;
-  list-style: circle;
-  padding-bottom: 1em;
-}
-
-/* line 204, ../../app/css/layout/_content.scss */
+/* line 287, ../../app/css/layout/_content.scss */
 .close {
   cursor: pointer;
-  left: 15px;
-  position: fixed;
-  top: 60px;
+  font-weight: 600;
+  height: 30px;
+  left: 30px;
+  position: absolute;
+  top: 20px;
+  z-index: 999;
 }
-/* line 210, ../../app/css/layout/_content.scss */
-.close:hover {
-  text-decoration: underline;
+/* line 296, ../../app/css/layout/_content.scss */
+.close p {
+  font-weight: 600;
+}
+/* line 298, ../../app/css/layout/_content.scss */
+.close:before {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid;
+  content: "";
+  height: 0;
+  left: 30px;
+  position: absolute;
+  top: -15px;
+  width: 0;
+  -webkit-transition: top 0.2s;
+  -moz-transition: top 0.2s;
+  -o-transition: top 0.2s;
+}
+/* line 314, ../../app/css/layout/_content.scss */
+.close:after {
+  content: "";
+  display: block;
+  height: 5px;
+  left: 40px;
+  position: absolute;
+  top: -6px;
+  width: 10px;
+}
+/* line 324, ../../app/css/layout/_content.scss */
+.close:hover:before {
+  top: -20px;
+}
+
+/* line 329, ../../app/css/layout/_content.scss */
+.section-top {
+  font-family: "Josefin Slab", serif;
+  font-size: 5em;
+  font-weight: 600;
+  margin-top: -50px;
+  text-align: center;
+}
+/* line 339, ../../app/css/layout/_content.scss */
+.section-top a:hover:after {
+  content: "[ Top of Section ]";
+  font-size: 16px;
+  display: block;
+  margin-top: -24px;
+  font-family: "Raleway", sans-serif;
 }
 
 /* line 1, ../../app/css/layout/_footer.scss */
@@ -521,10 +835,254 @@ header {
 .footer p {
   color: #42a482;
   line-height: 2.5;
+  margin-bottom: 0;
   text-align: center;
   text-transform: lowercase;
 }
-/* line 12, ../../app/css/layout/_footer.scss */
+/* line 13, ../../app/css/layout/_footer.scss */
 .footer span {
   font-size: 1.1em;
+}
+
+/* styles for mobile */
+@media only screen and (max-width: 846px) {
+  /* line 8, ../../app/css/layout/_media-queries.scss */
+  .square h1 {
+    font-size: 2em;
+  }
+
+  /* line 9, ../../app/css/layout/_media-queries.scss */
+  .square h2 {
+    font-size: 1.5em;
+  }
+
+  /* line 10, ../../app/css/layout/_media-queries.scss */
+  .side-nav .title {
+    font-size: 1.3em;
+  }
+
+  /* line 12, ../../app/css/layout/_media-queries.scss */
+  .contact ul {
+    width: 275px;
+  }
+
+  /* line 13, ../../app/css/layout/_media-queries.scss */
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+  /* line 17, ../../app/css/layout/_media-queries.scss */
+  .icon:before {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 668px) {
+  /* line 23, ../../app/css/layout/_media-queries.scss */
+  body {
+    -webkit-text-size-adjust: none;
+  }
+
+  /* line 24, ../../app/css/layout/_media-queries.scss */
+  .span-one-of-ten {
+    width: 100%;
+  }
+
+  /* line 25, ../../app/css/layout/_media-queries.scss */
+  .span-two-of-ten {
+    width: 100%;
+  }
+
+  /* line 26, ../../app/css/layout/_media-queries.scss */
+  .span-three-of-ten {
+    width: 100%;
+  }
+
+  /* line 27, ../../app/css/layout/_media-queries.scss */
+  .span-four-of-ten {
+    width: 100%;
+  }
+
+  /* line 28, ../../app/css/layout/_media-queries.scss */
+  .span-five-of-ten {
+    width: 100%;
+  }
+
+  /* line 29, ../../app/css/layout/_media-queries.scss */
+  .span-six-of-ten {
+    width: 100%;
+  }
+
+  /* line 30, ../../app/css/layout/_media-queries.scss */
+  .span-seven-of-ten {
+    width: 100%;
+  }
+
+  /* line 31, ../../app/css/layout/_media-queries.scss */
+  .span-eight-of-ten {
+    width: 100%;
+  }
+
+  /* line 32, ../../app/css/layout/_media-queries.scss */
+  .span-nine-of-ten {
+    width: 100%;
+  }
+
+  /* line 33, ../../app/css/layout/_media-queries.scss */
+  .span-ten-of-ten {
+    width: 100%;
+  }
+
+  /* line 35, ../../app/css/layout/_media-queries.scss */
+  .right {
+    text-align: left;
+  }
+
+  /* line 37, ../../app/css/layout/_media-queries.scss */
+  .main {
+    height: auto;
+  }
+
+  /* line 39, ../../app/css/layout/_media-queries.scss */
+  .square.about,
+  .square.contact {
+    padding-top: 2em;
+    width: 100%;
+  }
+  /* line 44, ../../app/css/layout/_media-queries.scss */
+  .square.about .content-wrapper,
+  .square.contact .content-wrapper {
+    padding: 30px 0;
+  }
+  /* line 46, ../../app/css/layout/_media-queries.scss */
+  .square.about header,
+  .square.contact header {
+    margin-bottom: 0;
+    position: relative;
+    right: auto;
+    text-align: center;
+  }
+  /* line 53, ../../app/css/layout/_media-queries.scss */
+  .square.about .front header,
+  .square.contact .front header {
+    display: none;
+  }
+  /* line 54, ../../app/css/layout/_media-queries.scss */
+  .square.about .contact-list,
+  .square.contact .contact-list {
+    padding-top: 1em;
+  }
+
+  /* line 57, ../../app/css/layout/_media-queries.scss */
+  header {
+    margin-bottom: 2em;
+  }
+
+  /* line 59, ../../app/css/layout/_media-queries.scss */
+  h1, [class*=" "] h1 {
+    font-size: 2em;
+  }
+
+  /* line 60, ../../app/css/layout/_media-queries.scss */
+  h2, [class*=" "] h2 {
+    font-size: 1.5em;
+  }
+
+  /* line 62, ../../app/css/layout/_media-queries.scss */
+  .square.portfolio,
+  .square.resume {
+    display: none;
+  }
+
+  /* line 65, ../../app/css/layout/_media-queries.scss */
+  .content-wrapper {
+    padding: 0px 10px 50px;
+  }
+
+  /* line 68, ../../app/css/layout/_media-queries.scss */
+  .content .proj-details {
+    float: none;
+    margin-bottom: 1.5em;
+  }
+  /* line 72, ../../app/css/layout/_media-queries.scss */
+  .content .proj-details .tag, .content .proj-details .date {
+    display: inline-block;
+  }
+  /* line 73, ../../app/css/layout/_media-queries.scss */
+  .content .proj-details .tag:after {
+    content: ", ";
+  }
+
+  /* line 78, ../../app/css/layout/_media-queries.scss */
+  .job a {
+    text-decoration: underline;
+  }
+  /* line 81, ../../app/css/layout/_media-queries.scss */
+  .job a:hover {
+    background: #8b2600;
+  }
+  /* line 83, ../../app/css/layout/_media-queries.scss */
+  .job a:before {
+    content: none;
+  }
+
+  /* line 88, ../../app/css/layout/_media-queries.scss */
+  #nav {
+    display: none;
+  }
+
+  /* line 90, ../../app/css/layout/_media-queries.scss */
+  .tinynav {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #30785f;
+    border: 1px solid #faf5d3;
+    color: #faf5d3;
+    display: block;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: inherit;
+    height: 60px;
+    opacity: 1;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  /* line 109, ../../app/css/layout/_media-queries.scss */
+  .side-nav:after {
+    border-left: 1px solid #faf5d3;
+    content: "\e600";
+    display: block;
+    font-family: 'icomoon';
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    vertical-align: top;
+    width: 9%;
+  }
+
+  /* line 123, ../../app/css/layout/_media-queries.scss */
+  .close {
+    left: auto;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    width: 90px;
+  }
+
+  /* line 131, ../../app/css/layout/_media-queries.scss */
+  .section-top a:after {
+    content: "[ Top of Section ]";
+    font-size: 16px;
+    display: block;
+    margin-top: -24px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  /* line 139, ../../app/css/layout/_media-queries.scss */
+  .content .timeline {
+    margin-bottom: 2em;
+  }
 }
