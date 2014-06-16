@@ -1,10 +1,3 @@
-/* line 2, ../../app/css/vendor/neat/grid/_grid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /* HTML5 */
 /* line 6, ../../app/css/base/_reset.scss */
 header, footer, article, section, hgroup, nav, figure {
@@ -77,74 +70,65 @@ table {
 /* line 3, ../../app/css/base/_typography.scss */
 h1 {
   font-size: 2.625em;
-  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 19, ../../app/css/base/_typography.scss */
+/* line 18, ../../app/css/base/_typography.scss */
 .content h1 {
   font-size: 2em;
   font-family: "Josefin Slab", serif;
   text-transform: none;
 }
 
-/* line 30, ../../app/css/base/_typography.scss */
+/* line 29, ../../app/css/base/_typography.scss */
 h2 {
   font-size: 2em;
-  font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
-/* line 39, ../../app/css/base/_typography.scss */
+/* line 37, ../../app/css/base/_typography.scss */
 .big h2 {
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.5;
 }
 
-/* line 48, ../../app/css/base/_typography.scss */
+/* line 46, ../../app/css/base/_typography.scss */
 h3 {
   font-size: 1.5em;
   font-family: "Josefin Slab", serif;
   font-weight: 300;
 }
 
-/* line 57, ../../app/css/base/_typography.scss */
+/* line 55, ../../app/css/base/_typography.scss */
 .content h3 {
   font-size: 1em;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
-/* line 66, ../../app/css/base/_typography.scss */
+/* line 64, ../../app/css/base/_typography.scss */
 p {
   font-size: 1em;
   margin-bottom: 1em;
 }
 
-/* line 71, ../../app/css/base/_typography.scss */
+/* line 69, ../../app/css/base/_typography.scss */
 .square p {
   font-family: "Josefin Slab", serif;
   font-weight: 300;
 }
 
-/* line 76, ../../app/css/base/_typography.scss */
-li {
-  font-size: 1em;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-}
-
-/* line 85, ../../app/css/base/_typography.scss */
+/* line 74, ../../app/css/base/_typography.scss */
 ol li {
   margin-bottom: 1em;
   margin-left: 1.5em;
 }
 
-/* line 90, ../../app/css/base/_typography.scss */
+/* line 79, ../../app/css/base/_typography.scss */
 article ul li,
 li li {
   list-style: circle;
@@ -152,18 +136,18 @@ li li {
   margin-left: 1.5em;
 }
 
-/* line 97, ../../app/css/base/_typography.scss */
+/* line 86, ../../app/css/base/_typography.scss */
 a {
   color: #faf5d3;
   text-decoration: none;
 }
 
-/* line 102, ../../app/css/base/_typography.scss */
+/* line 91, ../../app/css/base/_typography.scss */
 .job a {
   height: 100%;
   position: relative;
 }
-/* line 106, ../../app/css/base/_typography.scss */
+/* line 95, ../../app/css/base/_typography.scss */
 .job a::before {
   background: #8b2600;
   border-bottom: 1px solid #faf5d3;
@@ -178,33 +162,18 @@ a {
   width: 100%;
   z-index: -1;
 }
-/* line 121, ../../app/css/base/_typography.scss */
+/* line 110, ../../app/css/base/_typography.scss */
 .job a:hover::before {
   border-top: 1px solid #faf5d3;
   height: 100%;
 }
 
-/* line 127, ../../app/css/base/_typography.scss */
-small {
-  font-size: 0.875em;
-}
-
-/* line 131, ../../app/css/base/_typography.scss */
-.strong {
-  font-family: "Raleway", sans-serif;
-}
-
-/* line 135, ../../app/css/base/_typography.scss */
-.center {
-  text-align: center;
-}
-
-/* line 139, ../../app/css/base/_typography.scss */
+/* line 116, ../../app/css/base/_typography.scss */
 .right {
   text-align: right;
 }
 
-/* line 143, ../../app/css/base/_typography.scss */
+/* line 120, ../../app/css/base/_typography.scss */
 .left {
   text-align: left;
 }
@@ -472,6 +441,49 @@ header.job-title {
   width: 50%;
 }
 
+/* line 1, ../../app/css/layout/_header.scss */
+.square-wrapper {
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+/* line 7, ../../app/css/layout/_header.scss */
+.square-wrapper .back {
+  display: inline-block;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  vertical-align: middle;
+}
+/* line 16, ../../app/css/layout/_header.scss */
+.square-wrapper header {
+  margin-bottom: 30px;
+}
+/* line 18, ../../app/css/layout/_header.scss */
+.square-wrapper .more {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+}
+/* line 23, ../../app/css/layout/_header.scss */
+.square-wrapper:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 31, ../../app/css/layout/_header.scss */
+.square-wrapper:hover .back {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
 /* line 4, ../../app/css/layout/_content.scss */
 .about {
   background: #47584d;
@@ -618,66 +630,23 @@ header.job-title {
   padding: 50px;
 }
 
-/* line 139, ../../app/css/layout/_content.scss */
-.square-wrapper {
-  display: inline-block;
-  height: 100%;
-  text-align: center;
-  width: 100%;
-}
-/* line 145, ../../app/css/layout/_content.scss */
-.square-wrapper .back {
-  display: inline-block;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  -moz-opacity: 0;
-  -khtml-opacity: 0;
-  opacity: 0;
-  vertical-align: middle;
-}
-/* line 154, ../../app/css/layout/_content.scss */
-.square-wrapper header {
-  margin-bottom: 30px;
-}
-/* line 156, ../../app/css/layout/_content.scss */
-.square-wrapper .more {
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 1px;
-}
-/* line 161, ../../app/css/layout/_content.scss */
-.square-wrapper:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-/* line 169, ../../app/css/layout/_content.scss */
-.square-wrapper:hover .back {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  opacity: 1;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-}
-
-/* line 187, ../../app/css/layout/_content.scss */
+/* line 142, ../../app/css/layout/_content.scss */
 .details {
   position: relative;
 }
-/* line 190, ../../app/css/layout/_content.scss */
+/* line 145, ../../app/css/layout/_content.scss */
 .details .big {
   border-bottom: 5px solid #47584d;
   margin-top: 5px;
   position: relative;
 }
-/* line 196, ../../app/css/layout/_content.scss */
+/* line 151, ../../app/css/layout/_content.scss */
 .details .content-wrapper {
   margin: auto;
   max-width: 990px;
   position: relative;
 }
-/* line 201, ../../app/css/layout/_content.scss */
+/* line 156, ../../app/css/layout/_content.scss */
 .details .content-wrapper:before {
   content: '';
   display: inline-block;
@@ -685,18 +654,18 @@ header.job-title {
   vertical-align: middle;
 }
 
-/* line 211, ../../app/css/layout/_content.scss */
+/* line 166, ../../app/css/layout/_content.scss */
 .tinynav {
   display: none;
 }
 
-/* line 213, ../../app/css/layout/_content.scss */
+/* line 168, ../../app/css/layout/_content.scss */
 .side-nav {
   position: relative;
   margin-bottom: 50px;
   text-align: center;
 }
-/* line 218, ../../app/css/layout/_content.scss */
+/* line 173, ../../app/css/layout/_content.scss */
 .side-nav li {
   display: inline-block;
   height: 115px;
@@ -704,7 +673,7 @@ header.job-title {
   text-decoration: none;
   vertical-align: top;
 }
-/* line 225, ../../app/css/layout/_content.scss */
+/* line 180, ../../app/css/layout/_content.scss */
 .side-nav li::before {
   background: #30785f;
   border-bottom: 2px solid #faf5d3;
@@ -717,16 +686,16 @@ header.job-title {
   transition: height 0.3s;
   width: 100%;
 }
-/* line 238, ../../app/css/layout/_content.scss */
+/* line 193, ../../app/css/layout/_content.scss */
 .side-nav li.selected::before, .side-nav li:hover::before {
   height: 100%;
 }
-/* line 245, ../../app/css/layout/_content.scss */
+/* line 200, ../../app/css/layout/_content.scss */
 .side-nav .title {
   cursor: pointer;
   line-height: 1;
 }
-/* line 250, ../../app/css/layout/_content.scss */
+/* line 205, ../../app/css/layout/_content.scss */
 .side-nav .nav-item-wrapper {
   display: block;
   left: 0;
@@ -736,36 +705,36 @@ header.job-title {
   width: 100%;
 }
 
-/* line 261, ../../app/css/layout/_content.scss */
+/* line 216, ../../app/css/layout/_content.scss */
 .content {
   height: 85%;
 }
-/* line 264, ../../app/css/layout/_content.scss */
+/* line 219, ../../app/css/layout/_content.scss */
 .content .proj-details {
   float: right;
 }
-/* line 268, ../../app/css/layout/_content.scss */
+/* line 223, ../../app/css/layout/_content.scss */
 .content .pictures {
   float: right;
 }
-/* line 271, ../../app/css/layout/_content.scss */
+/* line 226, ../../app/css/layout/_content.scss */
 .content .pictures img {
   border: 1px solid #faf5d3;
   margin: 1%;
   padding: 1%;
   max-width: 100%;
 }
-/* line 279, ../../app/css/layout/_content.scss */
+/* line 234, ../../app/css/layout/_content.scss */
 .content .timeline {
   float: right;
   margin: 0 0 0 2.02%;
 }
-/* line 283, ../../app/css/layout/_content.scss */
+/* line 238, ../../app/css/layout/_content.scss */
 .content .timeline h3 {
   border-bottom: 1px solid #faf5d3;
 }
 
-/* line 287, ../../app/css/layout/_content.scss */
+/* line 242, ../../app/css/layout/_content.scss */
 .close {
   cursor: pointer;
   font-weight: 600;
@@ -775,11 +744,11 @@ header.job-title {
   top: 20px;
   z-index: 999;
 }
-/* line 296, ../../app/css/layout/_content.scss */
+/* line 251, ../../app/css/layout/_content.scss */
 .close p {
   font-weight: 600;
 }
-/* line 298, ../../app/css/layout/_content.scss */
+/* line 253, ../../app/css/layout/_content.scss */
 .close:before {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
@@ -794,7 +763,7 @@ header.job-title {
   -moz-transition: top 0.2s;
   -o-transition: top 0.2s;
 }
-/* line 314, ../../app/css/layout/_content.scss */
+/* line 269, ../../app/css/layout/_content.scss */
 .close:after {
   content: "";
   display: block;
@@ -804,12 +773,12 @@ header.job-title {
   top: -6px;
   width: 10px;
 }
-/* line 324, ../../app/css/layout/_content.scss */
+/* line 279, ../../app/css/layout/_content.scss */
 .close:hover:before {
   top: -20px;
 }
 
-/* line 329, ../../app/css/layout/_content.scss */
+/* line 284, ../../app/css/layout/_content.scss */
 .section-top {
   font-family: "Josefin Slab", serif;
   font-size: 5em;
@@ -817,7 +786,7 @@ header.job-title {
   margin-top: -50px;
   text-align: center;
 }
-/* line 339, ../../app/css/layout/_content.scss */
+/* line 294, ../../app/css/layout/_content.scss */
 .section-top a:hover:after {
   content: "[ Top of Section ]";
   font-size: 16px;
