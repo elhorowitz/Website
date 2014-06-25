@@ -4,18 +4,33 @@
     
     var self = {},
       tabSelect,
-      navSelect
+      navSelect,
+      setProject,
+      setMediaQuery
     ;
+
+    //Function to set header project description
+    setProject = function (el) {
+      var title = $("#" + el + " .title").html();
+      var tag = $("#" + el + " .tag").html();
+      var date = $("#" + el + " .date").html();
+
+      $(".portfolio .sample .title").text(title);
+      $(".portfolio .sample .tag").text(tag);
+      $(".portfolio .sample .date").text(date);
+    };
 
     //Function to switch between tabs - big screen
     tabSelect = function (el) {
       var project = el.attr("id") + "-story";
+
       $("#" + project).siblings().addClass("hidden");
       $("#" + project).removeClass("hidden");
 
       el.closest("li").addClass("selected");
       el.closest("li").siblings().removeClass("selected");
 
+      setProject(project);
     };
 
     //Function to switch between tabs - small screen
@@ -24,7 +39,23 @@
       $("#" + project).siblings().addClass("hidden");
       $("#" + project).removeClass("hidden");
 
+      setProject(project);
     };
+
+    //Function for Media Queries
+    setMediaQuery = function (el) {
+      //Only show one image if for mobile
+      if (el) {
+        $(".gallery").append("<p class=\"directions\">Click for more pictures</p>");
+        $(".gallery").each(function() {
+          $(this).find("a:not(:first)").addClass("hidden");
+        });
+      } else {
+        $(".gallery").children("p").remove();
+        $(".thumbnail").removeClass("hidden");   
+      } 
+    };
+
 
 
     self.initialize = function () {
@@ -32,6 +63,23 @@
       //tinynav 
       $(function () {
         $("#nav").tinyNav();
+      });
+
+      //Magnific-Popup
+      $('.gallery').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+          delegate: 'a', // the selector for gallery item
+          type: 'image',
+          gallery: {
+            enabled:true
+          }
+        });
+      });
+
+      //detect media-queries
+      setMediaQuery(Modernizr.mq('(max-width: 41.75em)'));
+      $(window).resize(function() {
+        setMediaQuery(Modernizr.mq('(max-width: 41.75em)'));
       });
       
       //Smooth Scroll code developed by Chris Coyier and Devin Sturgeon  
