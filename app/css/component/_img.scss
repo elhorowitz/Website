@@ -1,0 +1,31 @@
+
+.gallery {
+  float:right;
+  padding-left: 1.5em;
+
+  a:before {
+    content: none;
+  }
+}
+
+.thumbnail {
+  display: inline-block;
+  margin: 1%;
+  max-height: 16em;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .caption {
+    @include opacity(.8);
+    background: darken( $portfolio-accent-color, 12% );
+    bottom: 0;
+    left: 0;
+    padding: 0 .5em;
+    position: absolute;
+    width: 100%;
+  }
+}
