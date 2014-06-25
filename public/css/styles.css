@@ -990,39 +990,38 @@ html, body {
   height: 100%;
   line-height: 1.5;
   min-height: 39.375em;
-  overflow-x: hidden;
   width: 100%;
 }
 
-/* line 16, ../../app/css/layout/_global.scss */
+/* line 15, ../../app/css/layout/_global.scss */
 .main {
   border-bottom: 5px solid #47584d;
   height: 100%;
 }
 
-/* line 21, ../../app/css/layout/_global.scss */
+/* line 20, ../../app/css/layout/_global.scss */
 header {
   margin-bottom: 50px;
 }
-/* line 24, ../../app/css/layout/_global.scss */
+/* line 23, ../../app/css/layout/_global.scss */
 header.job-title {
   margin-bottom: 1em;
 }
 
-/* line 29, ../../app/css/layout/_global.scss */
+/* line 28, ../../app/css/layout/_global.scss */
 .content-wrapper {
   height: 100%;
   padding: 50px;
 }
 
-/* line 34, ../../app/css/layout/_global.scss */
+/* line 33, ../../app/css/layout/_global.scss */
 .hidden {
   left: -9999px;
   position: absolute;
   top: -9999px;
 }
 
-/* line 40, ../../app/css/layout/_global.scss */
+/* line 39, ../../app/css/layout/_global.scss */
 .stamp {
   display: block;
   height: 50px;
@@ -1030,26 +1029,26 @@ header.job-title {
   width: 100%;
 }
 
-/* line 47, ../../app/css/layout/_global.scss */
+/* line 46, ../../app/css/layout/_global.scss */
 .stamp path {
   fill: #47584d;
   stroke: #47584d;
 }
 
 /*---- CLEAR FIX ----*/
-/* line 56, ../../app/css/layout/_global.scss */
+/* line 55, ../../app/css/layout/_global.scss */
 .row:before,
 .row:after {
   content: " ";
   display: table;
 }
 
-/* line 62, ../../app/css/layout/_global.scss */
+/* line 61, ../../app/css/layout/_global.scss */
 .row:after {
   clear: both;
 }
 
-/* line 66, ../../app/css/layout/_global.scss */
+/* line 65, ../../app/css/layout/_global.scss */
 .row {
   *zoom: 1;
 }
