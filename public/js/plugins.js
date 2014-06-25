@@ -10,10 +10,6 @@
  * 
  */
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 /**
  * Private static constants
  */
