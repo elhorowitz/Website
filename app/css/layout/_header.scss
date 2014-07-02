@@ -1,0 +1,60 @@
+
+// Header Stylings
+// ---------------------------------------
+.square-wrapper {
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+
+  .back {
+    @include opacity(0);
+
+    display: inline-block;
+    vertical-align: middle;
+
+    -webkit-transition: all 0.4s ease;
+       -moz-transition: all 0.4s ease;
+         -o-transition: all 0.4s ease;
+  }
+
+  header { margin-bottom: 30px;}
+
+  .sample { display: inline-block; position: relative; }
+
+  .sample:before {
+    @include font-size(6);
+
+    content: "{";
+    font: {
+      family: $font-serif;
+      weight: 300;
+    }
+    left: -0.4em;
+    position: absolute;
+    top: -0.25em;
+  }
+
+  .sample:after {
+    @extend .sample:before;
+
+    content: "}";
+    left: auto;
+    right: -0.4em;
+  }
+
+  .more {
+    font-family: $font-sans;
+    letter-spacing: 1px;
+    margin-top: 1.5em;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  &:hover .back { @include opacity(1); }
+}

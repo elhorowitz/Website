@@ -1,0 +1,38 @@
+// Main Grid
+// ---------------------------------------
+
+.square {
+	@include inline-block;
+
+	height: 50%;
+	width: 50%;
+}
+
+.col {
+  @include inline-block;
+  margin: 0 ($gutter * 100%);
+}
+
+.span-one-of-ten { @include col-span(1); }
+
+.span-two-of-ten { @include col-span(2); }
+
+.span-three-of-ten { @include col-span(3); }
+
+.span-four-of-ten { @include col-span(4); }
+
+.span-five-of-ten { @include col-span(5); }
+
+.span-six-of-ten { @include col-span(6); }
+
+.span-seven-of-ten { @include col-span(7); }
+
+.span-eight-of-ten { @include col-span(8); }
+
+.span-nine-of-ten { @include col-span(9); }
+
+.span-ten-of-ten { @include col-span(10); }
+
+.whole { width: 100%; }
+
+.half { width: 50%; }

@@ -5,20 +5,20 @@
     var self = {},
       tabSelect,
       navSelect,
-      setProject,
+      // setProject,
       setMediaQuery
     ;
 
-    //Function to set header project description
-    setProject = function (el) {
-      var title = $("#" + el + " .title").html();
-      var tag = $("#" + el + " .tag").html();
-      var date = $("#" + el + " .date").html();
+    // //Function to set header project description
+    // setProject = function (el) {
+    //   var title = $("#" + el + " .title").html();
+    //   var tag = $("#" + el + " .tag").html();
+    //   var date = $("#" + el + " .date").html();
 
-      $(".portfolio .sample .title").text(title);
-      $(".portfolio .sample .tag").text(tag);
-      $(".portfolio .sample .date").text(date);
-    };
+    //   $(".portfolio .sample .title").text(title);
+    //   $(".portfolio .sample .tag").text(tag);
+    //   $(".portfolio .sample .date").text(date);
+    // };
 
     //Function to switch between tabs - big screen
     tabSelect = function (el) {
@@ -34,13 +34,13 @@
     };
 
     //Function to switch between tabs - small screen
-    navSelect = function (el) {
-      var project = el.val() + "-story";
-      $("#" + project).siblings().addClass("hidden");
-      $("#" + project).removeClass("hidden");
+    // navSelect = function (el) {
+    //   var project = el.val() + "-story";
+    //   $("#" + project).siblings().addClass("hidden");
+    //   $("#" + project).removeClass("hidden");
 
-      setProject(project);
-    };
+    //   setProject(project);
+    // };
 
     //Function for Media Queries
     setMediaQuery = function (el) {

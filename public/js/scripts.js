@@ -1,46 +1,86 @@
+/* App Module */
+
+var phonecatApp = angular.module('phonecatApp', [
+  // 'ngRoute',
+  // 'phonecatAnimations',
+  'phonecatControllers'
+  // 'phonecatFilters',
+  // 'phonecatServices'
+]);
+
+// phonecatApp.config(['$routeProvider',
+//   function($routeProvider) {
+//     $routeProvider.
+//       when('/phones', {
+//         templateUrl: 'partials/phone-list.html',
+//         controller: 'PhoneListCtrl'
+//       }).
+//       when('/phones/:phoneId', {
+//         templateUrl: 'partials/phone-detail.html',
+//         controller: 'PhoneDetailCtrl'
+//       }).
+//       otherwise({
+//         redirectTo: '/phones'
+//       });
+//   }]);
+/* Controllers */
+
+//angular
+var phonecatApp = angular.module('phonecatApp', []);
+
+phonecatApp.controller('PhoneListCtrl', function ($scope, $http) {
+  $http.get('projects.json').success(function(data) {
+
+    $scope.projects = data;
+  }).error(function(){
+    console.log("oh no!");
+  });
+
+  $scope.orderProp = 'age';
+});
 ;(function ($) {
   $(function () {
     'use strict';
     
     var self = {},
-      tabSelect,
-      navSelect,
-      setProject,
+      // tabSelect,
+      // navSelect,
+      // setProject,
       setMediaQuery
     ;
 
-    //Function to set header project description
-    setProject = function (el) {
-      var title = $("#" + el + " .title").html();
-      var tag = $("#" + el + " .tag").html();
-      var date = $("#" + el + " .date").html();
+    // //Function to set header project description
+    // setProject = function (el) {
+    //   var title = $("#" + el + " .title").html();
+    //   var tag = $("#" + el + " .tag").html();
+    //   var date = $("#" + el + " .date").html();
 
-      $(".portfolio .sample .title").text(title);
-      $(".portfolio .sample .tag").text(tag);
-      $(".portfolio .sample .date").text(date);
-    };
+    //   $(".portfolio .sample .title").text(title);
+    //   $(".portfolio .sample .tag").text(tag);
+    //   $(".portfolio .sample .date").text(date);
+    // };
 
     //Function to switch between tabs - big screen
-    tabSelect = function (el) {
-      var project = el.attr("id") + "-story";
+    // tabSelect = function (el) {
+    //   var project = el.attr("id") + "-story";
 
-      $("#" + project).siblings().addClass("hidden");
-      $("#" + project).removeClass("hidden");
+    //   $("#" + project).siblings().addClass("hidden");
+    //   $("#" + project).removeClass("hidden");
 
-      el.closest("li").addClass("selected");
-      el.closest("li").siblings().removeClass("selected");
+    //   el.closest("li").addClass("selected");
+    //   el.closest("li").siblings().removeClass("selected");
 
-      setProject(project);
-    };
+    //   setProject(project);
+    // };
 
     //Function to switch between tabs - small screen
-    navSelect = function (el) {
-      var project = el.val() + "-story";
-      $("#" + project).siblings().addClass("hidden");
-      $("#" + project).removeClass("hidden");
+    // navSelect = function (el) {
+    //   var project = el.val() + "-story";
+    //   $("#" + project).siblings().addClass("hidden");
+    //   $("#" + project).removeClass("hidden");
 
-      setProject(project);
-    };
+    //   setProject(project);
+    // };
 
     //Function for Media Queries
     setMediaQuery = function (el) {
@@ -98,10 +138,10 @@
       });
 
       //Switch between tabs - large screen
-      $(".nav-item-wrapper").on("click", function(e) {
-        e.preventDefault();
-        tabSelect($(this));
-      });
+      // $(".nav-item-wrapper").on("click", function(e) {
+      //   e.preventDefault();
+      //   tabSelect($(this));
+      // });
 
       //Switch between tabs - small screen
       $(".side-nav").on("change", function(e) {
