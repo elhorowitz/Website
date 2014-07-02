@@ -5,6 +5,10 @@
   background: $about-color;
   position: relative;
 
+  .content-wrapper {
+    height: 100%;
+  }
+
   header {
     bottom: 0;
     position: absolute;

@@ -18,16 +18,11 @@ html, body {
 }
 
 header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   &.job-title {
     margin-bottom: 1em;
   }
-}
-
-.content-wrapper {
-  height: 100%;
-  padding: 50px;
 }
 
 .ng-hide,

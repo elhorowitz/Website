@@ -1,5 +1,5 @@
 <header>
-  <h1>her work</h1>
+  <h1>work</h1>
 </header>
 <nav class="side-nav">
   <ul id="nav" ng-click="$event.preventDefault()">
@@ -24,20 +24,18 @@
       <h1 class="title left">{{thisProj.title}}</h1>
     </header>
     <article class="description row">
+      <!-- Insert the project's bio -->
+      <div class="blurb row">{{thisProj.blurb}}</div>
   
       <!-- Insert the project's pictures -->
-      <div class="gallery span-four-of-ten">
-        <div ng-repeat="img in thisProj.images">
+      <div class="gallery row">
+        <div ng-repeat="img in thisProj.images" class="col span-two-of-ten">
           <a class="thumbnail" href="{{img.source}}" title="{{img.caption}}">
-            <img src="{{img.source}}" alt="{{img.alt}}">
+            <img ng-src="{{img.source}}" alt="{{img.alt}}">
             <span class="caption">{{img.caption}}</span>
           </a>
         </div>
       </div> 
-
-      <!-- Insert the project's bio -->
-      <p>{{thisProj.blurb}}</p>
-
     </article>  
   </section>
 </div>
