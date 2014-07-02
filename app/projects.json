@@ -39,11 +39,13 @@
     "type": "Development",
     "date": "2014",
     "blurb": "This is the project blurb!",
-    "images": {
-      "source": "img/citizens_connect/current_collapsed.png",
-      "caption": "The current site",
-      "alt": "the current site"
-    }
+    "images": [
+      {
+        "source": "img/styleguide/style-guide.png",
+        "caption": "The current site",
+        "alt": "the current site"
+      }
+    ]
   },
   { 
     "id": "aux-bootcamp", 

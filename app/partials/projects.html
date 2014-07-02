@@ -2,44 +2,12 @@
   <h1>her work</h1>
 </header>
 <nav class="side-nav">
-  <ul id="nav">
-    <li class="col span-two-of-ten selected">
-      <a href="Citizens-Connect">
-        <div id="Citizens-Connect" class="nav-item-wrapper">
-          <h3 class="title">Citizens Connect</h3>
-          <p class="date"> [2014] </p>
-        </div>
-      </a>
-    </li><!-- 
-     --><li class="col span-two-of-ten">
-      <a href="Style-Guide">
-        <div id="Style-Guide" class="nav-item-wrapper">
-          <h3 class="title">Style-Guide</h3>
-          <p class="date"> [2014] </p>
-        </div>
-      </a>
-    </li><!-- 
-     --><li class="col span-two-of-ten">
-      <a href="AUX-Bootcamp">
-        <div id="AUX-Bootcamp" class="nav-item-wrapper">
-          <h3 class="title">What Should We Watch?</h3>
-          <p class="date"> [2014] </p>
-        </div>
-      </a>
-    </li><!-- 
-     --><li class="col span-two-of-ten">
-      <a href="Goalmometer">
-        <div id="Goalmometer" class="nav-item-wrapper">
-          <h3 class="title">Goalmometer</h3>
-          <p class="date"> [2011] </p>
-        </div>
-      </a>
-    </li><!-- 
-     --><li class="col span-two-of-ten">
-      <a href="Being-Heard">
-        <div id="Being-Heard" class="nav-item-wrapper">
-          <h3 class="title">Being Heard</h3>
-          <p class="date"> [2010] </p>
+  <ul id="nav" ng-click="$event.preventDefault()">
+    <li class="col span-two-of-ten" ng-repeat="item in projectList">
+      <a href="{{item.id}}" ng-click="tabSelect(item)">
+        <div id="{{item.id}}" class="nav-item-wrapper">
+          <h3 class="title">{{item.title}}</h3>
+          <p class="date"> [{{item.date}}] </p>
         </div>
       </a>
     </li>
@@ -47,273 +15,29 @@
 </nav><!-- 
  --><div class="content">
 
-  <section id="Citizens-Connect-story" class="project">
+  <section id="{{thisProj.id}}" class="project">
     <header>
       <div class="proj-details right">
-        <h3 class="tag">UX Case Study</h3>
-        <h3 class="date">2014</h3>
+        <h3 class="tag">{{thisProj.type}}</h3>
+        <h3 class="date">{{thisProj.date}}</h3>
       </div>
-      <h1 class="title left">Citizens Connect</h1>
+      <h1 class="title left">{{thisProj.title}}</h1>
     </header>
     <article class="description row">
-      
-      <h2>The Problem</h2>
-
-      <div class="gallery span-four-of-ten">
-        <a class="thumbnail" href="img/citizens_connect/current_collapsed.png" title="The current site">
-          <img src="img/citizens_connect/current_collapsed.png" alt="current site">
-          <span class="caption">The current site</span>
-        </a>
-        <a class="thumbnail" href="img/citizens_connect/paying_ticket.jpg" title="All current experience flows for paying a parking ticket">
-          <img src="img/citizens_connect/paying_ticket.jpg" alt="flow of current site">
-          <span class="caption">All current experience flows for paying a parking ticket</span>
-        </a>
-        <a class="thumbnail" href="img/citizens_connect/wireframe_hp.gif" title="Wireframe for the new homepage">
-          <img src="img/citizens_connect/wireframe_hp.gif" alt="wireframe of new site">
-          <span class="caption">Wireframe for the new homepage</span>
-        </a>
-        <a class="thumbnail" href="img/citizens_connect/citizens_UI.png" title="Design for the new site">
-          <img src="img/citizens_connect/citizens_UI.png" alt="design of new site">
-          <span class="caption">Design for the new site</span>
-        </a>
-        <a class="thumbnail" href="img/citizens_connect/citizens_website2.png" title="Coded prototype of the new site">
-          <img src="img/citizens_connect/citizens_website2.png" alt="coded new site">
-          <span class="caption">Coded prototype of the new site</span>
-        </a>
-      </div>
-      
-      <p>Citizens Connect is the online service portal of the City of Boston website. The site, coupled with its award winning mobile app, provides services ranging from reporting a broken street lamp to learning how to obtain a public event permit. While its award winning mobile app counterpart is clean, straightforward, and easy to use, the website’s online-services section is basically a site-map listing every link to every service the city provides (with a few broken links scattered within). The site needed an overhaul.</p>
-
-      <h2>The Process</h2>
-
-      <p>As  a group of three, we went about tackling the site's redesign. The first step necessary was to establish its information architecture (IA). Experience mapping lead to the conclusion that the types of services provided on the site fell into four buckets: 
-        <ul>
-          <li>a Reporting: allowing residents to inform the city of issues they encounter (ie overflowing public dumpster, cracked sidewalk)</li>
-          <li>a Requesting: allowing residents to ask for city-related services (ie licensing, street cleanup, a bike lane)</li>
-          <li>a Payment: (ie for a parking ticket, property taxes, utilities)</li>
-          <li>Information: generally for city services that cannot be done online</li>
-        </ul>
-      </p>
-      <p>With these four buckets in mind, we combined the ~100 sections and subsections of the current online services page into fifteen distinct categories.</p>
-      <p>Our next step was to use this IA to sketch out the redesigned site’s layout and flow. Because, as determined previously, users come to Citizens Connect to perform an action (reporting, requesting paying, learning), we decided the site really should be a <em>tool</em> to help users perform these actions efficiently.</p>
-
-      <h2>The Solution</h2>
-      <p>This philosophy, along with research into other government websites (including <a href="https://www.gov.uk/">the UK's</a>, <a href="http://www1.nyc.gov/">New York's</a>, and <a href="http://www.chattanooga.gov/">Chattanooga's</a>), led to the development of three types of pages:
-        <ul>
-          <li>the home page: as the entry point to Citizens Connect, this page focuses on getting users where they want to go with only 1 click by focusing on a) a prominent search field and b) the most common services on the site (featured in a “top actions” section at the top of the page).</li>
-          <li>the action page: generally a form, this page is dedicated to the action the user is trying to perform</li>
-          <li>the information page: used to provide users with all information they need about the services related to each of the established fifteen categories. This includes links to relevant action pages.</li>
-        </ul>
-      </p>
-      <p>All types of pages also have a search field to help users quickly find what they want, and a “services and information” section with links to all each of the 15 categories’ information pages.</p>
-
-      <p>One teammate went about wireframing these pages using Adobe Fireworks and user testing several scenarios using the InVision app, while another designed the interface of the new site. The blue theme was kept in order to ease integration of the redesign with the City of Boston site, however use of bold images, color blocks, flat design, and strategic white spaces were introduced to give the site a more modern, clean, and accessible feel.</p>
-      <p>My task was to turn the wireframes and design into a usable prototype. In 1.5 days I coded the designs and expanded upon the usability of the site the use of CSS3 and JQuery for smooth transitions and scrolling and the plugin Chosen.js to create a more powerful search field. The site, of course, was also coded to be responsive and to follow WAI-ARIA guidelines for accessibility.</p>
-      <p>The <a href="http://elhorowitz.github.io/AUX-Final-Project/">result</a> is a usable, friendly, and powerful resource for Boston’s residents!</p>
-    </article>  
-  </section>
-
-  <section id="Style-Guide-story" class="project hidden">
-    <header>
-      <div class="proj-details right">
-        <h3 class="tag">Development</h3>
-        <h3 class="date">2014</h3>
-      </div>
-      <h1 class="title left">Coded Style Guide</h1>
-    </header>
-    <article class="description row">
-      
-      <h2>The Problem</h2>
-
-      <div class="gallery span-four-of-ten">
-        <a class="thumbnail" href="img/eastern_bank/style-guide.png" title="A sample of the coded Style Guide">
-          <img src="img/eastern_bank/style-guide.png" alt="style guide">
-          <span class="caption">A sample of the coded Style Guide</span>
-        </a>
-      </div>
-
-      <p>While at Fresh Tilled Soil, I was tasked with the creation of a coded style-guide for a prominent financial institution in the Boston area. The client was currently in the midst of a re-brand for their website and mobile applications, and while they reached out to FTS primarily to design the rebrand, it was clear that they would also benefit from coding guidance as well.</p>
-
-      <h2>The Solution</h2>
-      <p>Using the Adobe Photoshop design template provided by Fresh Tilled soil for visuals, and the website prototype provided by the client, I created code samples for the following:
-        <ul>
-          <li>the general page layout, including the header, footer, and navigation bar</li>
-          <li>typography elements and icons</li>
-          <li>the color scheme</li>
-          <li>the components found in the prototype (ie tables, tabs, draggable modules, form elements, etc.)</li>
-        </ul>
-      </p>
-      <p>These code samples provided the client with examples of how the site should  be coded. They were clean, semantic, and accessible.</p>
-    </article>  
-  </section>
-
-  <section id="AUX-Bootcamp-story" class="project hidden">
-    <header>
-      <div class="proj-details right">
-        <h3 class="tag">UX Design Exercise</h3>
-        <h3 class="date">2014</h3>
-      </div>
-      <h1 class="title left">What Should We Watch?</h1>
-    </header>
-    <article class="description row">
-      
-      <h2>The Problem</h2>
-
-      <div class="gallery span-four-of-ten">
-        <a class="thumbnail" href="img/bootcamp/bootcamp_factors.png" title="Brainstorming why group decisions are hard">
-          <img src="img/bootcamp/bootcamp_factors.png" alt="factors involved in making group decisions">
-          <span class="caption">Brainstorming why group decisions are hard</span>
-        </a>
-        <a class="thumbnail" href="img/bootcamp/bootcamp_personas.png" title="Personas for group decision makers">
-          <img src="img/bootcamp/bootcamp_personas.png" alt="personas">
-          <span class="caption">Personas for group decision makers</span>
-        </a>
-        <a class="thumbnail" href="img/bootcamp/bootcamp_thoughtprocess.png" title="Flow for choosing what to watch on Netflix">
-          <img src="img/bootcamp/bootcamp_thoughtprocess.png" alt="flow of decision making">
-          <span class="caption">Flow for choosing what to watch on Netflix</span>
-        </a>
-        <a class="thumbnail" href="img/bootcamp/bootcamp_paper-proto.png" title="Paper prototype of the app: What Should We Watch">
-          <img src="img/bootcamp/bootcamp_paper-proto.png" alt="paper prototype of solution">
-          <span class="caption">Paper prototype of the app: What Should We Watch</span>
-        </a>
-        <a class="thumbnail" href="img/bootcamp/bootcamp_POPoverall.png" title="The prototype using POP app">
-          <img src="img/bootcamp/bootcamp_POPoverall.png" alt="Digitized paper prototype">
-          <span class="caption">The prototype using POP app</span>
-        </a>
-        <a class="thumbnail" href="img/bootcamp/bootcamp_pickfriends.png" title="What Should We Watch: including group members">
-          <img src="img/bootcamp/bootcamp_pickfriends.png" alt="coded solution - step 1">
-          <span class="caption">What Should We Watch: including group members</span>
-        </a>
-        <a class="thumbnail" href="img/bootcamp/bootcamp_movies.png" title="What Should We Watch: movie suggestions">
-          <img src="img/bootcamp/bootcamp_movies.png" alt="coded solution - step 2">
-          <span class="caption">What Should We Watch: movie suggestions</span>
-        </a>
-      </div>
-      
-      <p>During the first two weeks of my apprenticeship at Fresh Tilled Soil, a UX agency in Boston, I was given the task of creating a single-function app from conception to development as a sort of design “bootcamp”. Without any guidance around the nature of this app, I spent the first day or two wracking my brain for problems that could be solved by an app that does just ONE THING. After days, changing my mind hourly, I finally settled on the most relevant problem I could think of - making decisions.</p>
-      
-      <h2>The Process</h2>
-      <p>I dove into research, conducting interviews with people of all ages, personalities, and statuses, scouring the Apple App store for current decision-making apps, and reading multiple research articles pertaining to decision making. This work led me to realize “making decisions”, as an entity, was too broad and too nebulous a problem to solve. Back at the drawing board, I decided to focus on a specific decision making situation, and settled on “Choosing a Netflix Movie to Watch Amongst Friends”, a process I personally found particularly painful.</p>
-      <p>After another round of more tailored interviews and a survey sent out via Facebook, I found three fascinatingly consistent themes among respondants:
-        <ol>
-          <li>A long decision process will unvaryingly result in a poor movie watching experience
-            <ul><li>“at least we saw something"</li></ul>
-          </li>
-          <li>People are more reluctant to re-watch movies than they are to re-watch, say, a TV show episode.
-            <ul><li>“If we want to watch TV, it's usually super quick and a no-brainer because we tend to re-watch series (The Office, 30 Rock, a nature doc series etc.) TV takes less of a commitment, whereas if you're going to watch a movie, you have to be ready to sit down and watch for 2 + hours.”</li></ul>
-          </li>
-          <li>While Netflix has thousands of movies and TV shows to stream, people consider the selection pool lacking
-            <ul><li>“Netflix did not have any of the movies I wanted to see"</li></ul>
-          </li> 
-        </ol>
-      </p>
-
-      <h2>The Solution</h2>
-      <p>Changing the movie selection was obviously out of scope for my app, so I focused on people’s aversion to re-watching movies. The most simple and elegant solution to solve this was to create an app that allowed users to hide movies they had already seen from the roster.</p>
-      <p>My app, What Should We Watch, developed into a social network app using the Netflix API. After signing in using their Netflix account information, users would be able to connect with their friends (after mutually agreeing upon the connection) and browse Netflix using a “seen”/“not seen” filter. This filter would not only address users’ re-watching aversion, but it would also allow users to only indirectly share their viewing history - reducing the potential for embarrassment due to past questionable viewing choices.</p>
-      <p>Netflix does, currently, have a social component. Users can link their accounts to Facebook to share their viewing history and/or Netflix suggestions amongst Facebook friends and vice versa. This, however, felt too public for me. Yes, it is possible to hide shows from the public view as you are watching them, but I don’t personally need my former boss and other Facebook “friends” to see the things Netflix suggest for me (which are ultimately based on my viewing history).</p>
-      <p>The privacy features intentially implemented in What not to Watch do, however, create a pretty labor intensive onboarding process, so I decided to sketch out some wireframes of the process. Using the POP app to simulate the process, I ran few user tests and determined that informing users upfront of the benefits they would gain from using the product was enough to counter-act the long boarding process.</p>
-      <p>I then coded the design into a high-fidelity prototype using HTML, CSS, and Javascript to create a more realistic simulation of the on boarding experience (complete with a slow connection speed), as well as of the experience of actually selecting a movie with friends. The results were overwhelmingly positive, and generally along the lines of “so when are you implementing this for real?”</p>
-    </article>  
-  </section>
-
-  <section id="Goalmometer-story" class="project hidden">
-    <header>
-      <div class="proj-details right">
-        <h3 class="tag">HCI Research</h3>
-        <h3 class="date">2011</h3>
-      </div>
-      <h1 class="title left">Goalmometer</h1>
-    </header>
-    <article class="description row">
-
-      <h2>The Inspiration</h2>
-
-      <div class="gallery span-four-of-ten">
-        <a class="thumbnail" href="img/goalmometer/thesis-thermo.png" title="The inspiration: Thesis Thermometer">
-          <img src="img/goalmometer/thesis-thermo.png" alt="thesis thermometer">
-          <span class="caption">The inspiration: Thesis Thermometer</span>
-        </a>
-        <a class="thumbnail" href="img/goalmometer/danco-version.png" title="Tool idea #1: digitized thesis thermometer">
-          <img src="img/goalmometer/danco-version.png" alt="brainstorm idea #1">
-          <span class="caption">Tool idea #1: digitized thesis thermometer</span>
-        </a>
-        <a class="thumbnail" href="img/goalmometer/erica-version.png" title="Tool idea #2: generates a picture as user complete tasks">
-          <img src="img/goalmometer/erica-version.png" alt="brainstorm idea #2">
-          <span class="caption">Tool idea #2: generates a picture as user complete tasks</span>
-        </a>
-      </div>
-      
-      <p>Professor Dan Cosley, at Cornell University, was inspired by a former PhD student’s “Thesis Thermometer”, a progress management system which consisted of a piece of paper with numbered boxes and some stickers. Whenever these student felt she had made progress on her thesis, she added a sticker. He liked this approach because it allowed the student to view her progress on her own terms. A really difficult paragraph might take the same level of effort as a few pages of breezy writing, so it makes most sense that they are represented equally, with one sticker. Professor Cosley saw potential in furthering this idea to create a better method of motivation and task management.</p>
-
-      <h2>The Process</h2>
-      <p>With a team of six graduate and undergraduate students, and under the guidance of Professor Cosley, we first designed and ran interviews to better understand how students at Cornell University motivate themselves to complete tasks, and to track progress on them. This provided valuable insight into the role social ties have as a motivating factor for completing tasks - if people perceived that they were held accountable socially to complete a task, they seemed more likely do so.</p>
-      <p>We therefore decided to make a tool that:
-        <ol>
-          <li>Allowed users to establish their own method of progress measurement</li>
-          <li>Maintained a visual of the progress</li>
-          <li>Had a social component</li>
-        </ol>
-      </p>
-      <p>With these criteria in place, we brainstormed, both individually and in a group, designs for the tool.  We then chose two of the ideas to flesh out, first into paper prototypes, then into higher fidelity mock-ups. These were extensively user tested to assess if the tool was actually motivating (did users experience increased performance?), and if they had the “stickiness” factor (did users see enough value out of the tool to keep using it?).</p>
-
-      <h2>The Solution</h2>
-      <p>While I, unfortunately, graduated before its creation, the knowledge gained from user testing the two prototypes led to the development of a single solution, Pact.
-      <blockquote>[Pact is] a social application in which groups of friends can collaborate toward goal achievement… Pact allows individuals to set personally achievable goals, yet encourages both collaboration and competition by allowing friends to compare measurable progress and hold each other accountable.<sup>1</sup></blockquote>
-      </p>
-      <p>1. Porges, Z., Yang, X., Desai, A., Ho, C., Pallegedara, R., Razzaque, R., Cosley, D. (2014). Achieve: Evaluating the Impact of Progress Logging and Social Feedback on Goal Achievement. <a href="http://dl.acm.org/citation.cfm?doid=2556420.2556498">Poster at CSCW 2014.</a></p>
-    </article>  
-  </section>
   
-  <section id="Being-Heard-story" class="project hidden">
-    <header>
-      <div class="proj-details right">
-        <h3 class="tag">HCI Research</h3>
-        <h3 class="date">2010</h3>
-      </div>
-      <h1 class="title left">Being Heard</h1>
-    </header>
-    <article class="description row">
-      
-      <h2>The Problem</h2>
-      
+      <!-- Insert the project's pictures -->
       <div class="gallery span-four-of-ten">
-        <a class="thumbnail" href="img/being_heard/pieTime.png" title="First iteration - PieTime">
-          <img src="img/being_heard/pieTime.png" alt="PieTime">
-          <span class="caption">First iteration - PieTime</span>
-        </a>
-        <a class="thumbnail" href="img/being_heard/er-diagram.jpg" title="ER Diagram for Being Heard">
-          <img src="img/being_heard/er-diagram.jpg" alt="ER Diagram">
-          <span class="caption">ER Diagram for Being Heard</span>
-        </a>
-        <a class="thumbnail" href="img/being_heard/sketch.jpg" title="Sketch of Being Heard">
-          <img src="img/being_heard/sketch.jpg" alt="thesis thermometer">
-          <span class="caption">Sketch of Being Heard</span>
-        </a>
-        <a class="thumbnail" href="img/being_heard/default2notes.png" title="Notes on an iteration of Being Heard">
-          <img src="img/being_heard/default2notes.png" alt="Annotated Being Heard app">
-          <span class="caption">Notes on an iteration of Being Heard</span>
-        </a>
-      </div>
-    
-      <p>Professor Dan Cosley, at Cornell University, had been interested in assessing people’s ability to communicate with others ever since, as a young adult, a friend responded to him pouring his heart out with "I learned a new rollerblade trick. Wanna see?”</p>
-      <p>With the plethora of communication data available online via social media, he wanted to create a tool to make people more aware of how well they are “Being Heard”.</p>
+        <div ng-repeat="img in thisProj.images">
+          <a class="thumbnail" href="{{img.source}}" title="{{img.caption}}">
+            <img src="{{img.source}}" alt="{{img.alt}}">
+            <span class="caption">{{img.caption}}</span>
+          </a>
+        </div>
+      </div> 
 
-      <h2>The Process</h2>
-      <p>Previous research on this project led to <a href="http://www.cs.cornell.edu/~danco/research/papers/zhao-ng-pietime-iconf2012.pdf">PieTime</a> - a data visualization tool that mapped peoples’ aggregated email and mobile text-message histories to time.</p>
-      <p>Leading a team of ten undergraduate students, and under the guidance of Professor Dan Cosley, I decided to take this idea further and create a tool to hep users visualize their communication habits via synchronous social media channels as well.</p>
-      <p>Using research results and related work gathered from PieTime as guidance, we went about designing the data visualization tool. We wanted to create a tool that was as ambient as possible because, while we wanted our tool to update in real time along like the channel it was visualizing, we didn’t want it to distract the user from his/her conversation. In addition, we wanted to keep with PieTime’s theme of mapping conversations over time. We also had to consider the types of resources available for use - including social media data and tool development options.</p>
-      <p>Many, many sketches, brainstorms, and paper prototypes later, we settled on a design and went about developing it.</p>
+      <!-- Insert the project's bio -->
+      <p>{{thisProj.blurb}}</p>
 
-      <h2>The Solution</h2>
-      <p>Being Heard is a Firefox extension that visualizes a user’s Google Chats. When turned on, the tool provides the user with three pieces of data: 
-        <ol>
-          <li>A word cloud showing the top non-simple words the user and his/her chat contacts have used in recent history</li>
-          <li>A word cloud showing top non-simple words the user and his/her contacts have used over all</li>
-          <li>A calendar showing a breakdown of who the user has been chatting with over the past month</li>
-        </ol>
-      The user can filter the data provided by top word, by date, and by chat contact. He/she can also zoom in/out in the calendar to show chat history by year, month, week, and day.</p>
-      <p>By showing the above information, we provided users with the ability to not just see who they were talking with quantitatively (ie. number of conversations, length of conversations, ratio of word volume per conversation), but also to gauge these conversations qualitatively (ie. types of words written in conversations per contact). For example, when looking at my personal chat history, I was able to clearly see relationships forming and evolving on the calendar. I was also able to see a clear distinction in the words used in conversations between, say, a parent and me and between a close friend and me.</p>
     </article>  
   </section>
 </div>
