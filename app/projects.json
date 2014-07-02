@@ -1,0 +1,145 @@
+[
+  { 
+    "id": "citizens-connect", 
+    "title": "Citizens Connect",
+    "type": "UX Case Study",
+    "date": "2014",
+    "blurb": "This is the project blurb!",
+    "images": [
+      {
+        "source": "img/citizens_connect/current_collapsed.png",
+        "caption": "The current site",
+        "alt": "the current site"
+      },
+      {
+        "source": "img/citizens_connect/paying_ticket.jpg",
+        "caption": "All current experience flows for paying a parking ticket",
+        "alt": "flow of current site"
+      },
+      {
+        "source": "img/citizens_connect/wireframe_hp.gif",
+        "caption": "Wireframe for the new homepage",
+        "alt": "wireframe of new site"
+      },
+      {
+        "source": "img/citizens_connect/citizens_UI.png",
+        "caption": "Design for the new site",
+        "alt": "design of new site"
+      },
+      {
+        "source": "img/citizens_connect/citizens_website2.png",
+        "caption": "Coded prototype of the new site",
+        "alt": "coded new site"
+      }
+    ]
+  },
+  { 
+    "id": "coded-styleguide", 
+    "title": "Coded Style Guide",
+    "type": "Development",
+    "date": "2014",
+    "blurb": "This is the project blurb!",
+    "images": {
+      "source": "img/citizens_connect/current_collapsed.png",
+      "caption": "The current site",
+      "alt": "the current site"
+    }
+  },
+  { 
+    "id": "aux-bootcamp", 
+    "title": "What Should We Watch?",
+    "type": "UX Design Exercise",
+    "date": "2014",
+    "blurb": "This is the project blurb!",
+    "images": [
+      {
+        "source": "img/bootcamp/bootcamp_factors.png",
+        "caption": "Brainstorming why group decisions are hard",
+        "alt": "factors involved in making group decisions"
+      },
+      {
+        "source": "img/bootcamp/bootcamp_personas.png",
+        "caption": "Personas for group decision makers",
+        "alt": "personas"
+      },
+      {
+        "source": "img/bootcamp/bootcamp_thoughtprocess.png",
+        "caption": "Flow for choosing what to watch on Netflix",
+        "alt": "flow of decision making"
+      },
+      {
+        "source": "img/bootcamp/bootcamp_paper-proto.png",
+        "caption": "Paper prototype of the app: What Should We Watch",
+        "alt": "paper prototype of solution"
+      },
+      {
+        "source": "img/bootcamp/bootcamp_POPoverall.png",
+        "caption": "The prototype using POP app",
+        "alt": "Digitized paper prototype"
+      },
+      {
+        "source": "img/bootcamp/bootcamp_pickfriends.png",
+        "caption": "What Should We Watch: including group members",
+        "alt": "coded solution - step 1"
+      },
+      {
+        "source": "img/bootcamp/bootcamp_movies.png",
+        "caption": "What Should We Watch: movie suggestions",
+        "alt": "coded solution - step 1"
+      }
+    ]
+  },
+  { 
+    "id": "goalmometer", 
+    "title": "Goalmometer",
+    "type": "HCI Research",
+    "date": "2011",
+    "blurb": "This is the project blurb!",
+    "images": [
+      {
+        "source": "img/goalmometer/thesis-thermo.png",
+        "caption": "The inspiration: Thesis Thermometer",
+        "alt": "thesis thermometer"
+      },
+      {
+        "source": "img/goalmometer/danco-version.png",
+        "caption": "Tool idea #1: digitized thesis thermometer",
+        "alt": "brainstorm idea #1"
+      },
+      {
+        "source": "img/goalmometer/erica-version.png",
+        "caption": "Tool idea #2: generates a picture as user complete tasks",
+        "alt": "brainstorm idea #2"
+      }
+    ]
+  },
+  { 
+    "id": "being-heard", 
+    "title": "Being Heard",
+    "type": "HCI Research",
+    "date": "2010",
+    "blurb": "This is the project blurb!",
+    "images": [
+      {
+        "source": "img/being_heard/pieTime.png",
+        "caption": "First iteration - PieTime",
+        "alt": "PieTime"
+      },
+      {
+        "source": "img/being_heard/er-diagram.jpg",
+        "caption": "ER Diagram for Being Heard",
+        "alt": "ER diagram"
+      },
+      {
+        "source": "img/being_heard/sketch.jpg",
+        "caption": "Sketch of Being Heard",
+        "alt": "sketch of the design"
+      },
+      {
+        "source": "img/being_heard/default2notes.png",
+        "caption": "Notes on an iteration of Being Heard",
+        "alt": "Annotated Being Heard app"
+      }
+    ]
+  }
+]
