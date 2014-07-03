@@ -3,8 +3,8 @@
 </header>
 <nav class="side-nav">
   <ul id="nav" ng-click="$event.preventDefault()">
-    <li class="col span-two-of-ten" ng-repeat="item in projectList">
-      <a href="{{item.id}}" ng-click="tabSelect(item)">
+    <li class="col span-two-of-ten" ng-repeat="item in projectList" ng-class="{selected: item.id == thisProj.id}">
+      <a href="{{item.id}}" ng-click="tabSelect(item)" >
         <div id="{{item.id}}" class="nav-item-wrapper">
           <h3 class="title">{{item.title}}</h3>
           <p class="date"> [{{item.date}}] </p>
@@ -25,14 +25,14 @@
     </header>
     <article class="description row">
       <!-- Insert the project's bio -->
-      <div class="blurb row">{{thisProj.blurb}}</div>
+      <p ng-repeat="paragraph in thisProj.blurb">{{paragraph}}</p>
   
       <!-- Insert the project's pictures -->
       <div class="gallery row">
         <div ng-repeat="img in thisProj.images" class="col span-two-of-ten">
           <a class="thumbnail" href="{{img.source}}" title="{{img.caption}}">
             <img ng-src="{{img.source}}" alt="{{img.alt}}">
-            <span class="caption">{{img.caption}}</span>
+            <span class="caption"><p>{{img.caption}}</p></span>
           </a>
         </div>
       </div> 

@@ -1,5 +1,7 @@
 
 .gallery {
+  padding-top: 1.5em;
+
   a:before {
     content: none;
   }
@@ -11,6 +13,11 @@
   max-height: 10em;
   min-height: 10em;
   overflow: hidden;
+  text-align: center;
+
+  &:hover { 
+    .caption { @include opacity(0.9); }
+  }
 
   img {
     max-width: 100%;
@@ -18,12 +25,27 @@
   }
 
   .caption {
-    @include opacity(.8);
+    @include opacity(0);
+    @include transition (all, 0.2s, ease);
     background: darken( $portfolio-accent-color, 12% );
-    bottom: 0;
+    height: 100%;
     left: 0;
     padding: 0 .5em;
     position: absolute;
+    text-align: center;
+    top: 0;
     width: 100%;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    p {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }

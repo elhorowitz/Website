@@ -4,7 +4,7 @@
     "title": "Citizens Connect",
     "type": "UX Case Study",
     "date": "2014",
-    "blurb": "This is the project blurb!",
+    "blurb": "",
     "images": [
       {
         "source": "img/citizens_connect/current_collapsed.png",
@@ -38,7 +38,10 @@
     "title": "Coded Style Guide",
     "type": "Development",
     "date": "2014",
-    "blurb": "This is the project blurb!",
+    "blurb": [
+      "While at Fresh Tilled Soil (FTS), I was tasked with the creation of a coded style-guide for a prominent financial institution in New England. The client was currently in the midst of a re-brand for their website and mobile applications, and while they reached out to FTS primarily to design the rebrand, it was clear that they would also benefit from code guidance as well.",
+      "Using the Adobe Photoshop design template provided by designers at FTS (for visuals), and the website prototype provided by the client (for content), I created code snippets for all aspects of the site, including: layout, color, typography, and stand-alone components. These code samples provided the client with standards for how the site should be coded - they were clean, semantic, accessible, and compatible with all browsers back to IE8."
+    ],
     "images": [
       {
         "source": "img/styleguide/style-guide.png",
@@ -52,7 +55,7 @@
     "title": "What Should We Watch?",
     "type": "UX Design Exercise",
     "date": "2014",
-    "blurb": "This is the project blurb!",
+    "blurb": "",
     "images": [
       {
         "source": "img/bootcamp/bootcamp_factors.png",
@@ -96,7 +99,12 @@
     "title": "Goalmometer",
     "type": "HCI Research",
     "date": "2011",
-    "blurb": "This is the project blurb!",
+    "blurb": [
+      "There is a distinct lack of tools out there that accurately measure progress and\/or productivity. Instead, we see a plethora of tools that reduce work into quantifiable measures like hours, pages, and actions that erase equally important measures like emotion, effort, and concentration. Cornell University\u0027s Reimagination Lab, led by Professor Dan Cosley, set out to change this.",
+      "Our objective was to design a digital tool that simulated people\u0027s mental model of goal management. Through interviews with Cornell students and related research, we decided to focus on a tool that visualized the user\u0027s progress, and had a social component to allow for others' support. This led to the development of Pact:",
+      "\"[Pact is] a social application in which groups of friends can collaborate toward goal achievement… Pact allows individuals to set personally achievable goals, yet encourages both collaboration and competition by allowing friends to compare measurable progress and hold each other accountable.\" [1]",
+      "1. Porges, Z., Yang, X., Desai, A., Ho, C., Pallegedara, R., Razzaque, R., Cosley, D. (2014). Achieve: Evaluating the Impact of Progress Logging and Social Feedback on Goal Achievement"
+    ],
     "images": [
       {
         "source": "img/goalmometer/thesis-thermo.png",
@@ -120,7 +128,7 @@
     "title": "Being Heard",
     "type": "HCI Research",
     "date": "2010",
-    "blurb": "This is the project blurb!",
+    "blurb": "",
     "images": [
       {
         "source": "img/being_heard/pieTime.png",

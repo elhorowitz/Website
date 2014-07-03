@@ -11,3 +11,10 @@ app.controller('projectListCtrl', ['$scope', '$http',
       };
     });
   }]);
+
+app.controller('contactListCtrl', ['$scope', '$http',
+  function ($scope, $http) {
+    $http.get('contact.json').success(function(data) {
+      $scope.contactList = data;
+    });
+  }]);

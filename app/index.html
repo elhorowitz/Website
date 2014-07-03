@@ -20,53 +20,76 @@
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script><![endif]-->
 
   </head>
-  <body ng-app="pageDataApp">
+  <body ng-app="pageDataApp" ng-controller="projectListCtrl">
     
     <!-- Insert Main Page here:-->
-    <section class="main row" ng-include="'partials/main.html'">
+    <section class="main row">
+      <a id="head"></a>
+      <section class="square about" role="banner">
+        <div class="content-wrapper">
+          <header>
+            <h1>erica horowitz</h1>
+            <h2>UX Designer</h2>
+          </header>
+        </div>
+      </section><!-- 
+
+       --><section class="square portfolio">
+        <a href="#mywork">
+          <div class="square-wrapper" aria-live="polite">
+
+            <div class="back">
+              <header>
+                <h1>work</h1>
+              </header>
+              <div class="sample">
+                <h2 class="title">{{thisProj.title}}</h2>
+                <h3 class="tag">{{thisProj.type}}</h3>
+                <p class="date">{{thisProj.date}}</p>
+              </div>
+              <p class="more">[ click for more information ]</p>
+            </div>
+          </div>
+        </a>
+      </section><!-- 
+
+       --><section class="square resume">
+        <a href="#mystory">
+          <div class="square-wrapper" aria-live="polite">
+
+            <div class="back">
+              <header>
+                <h1>story</h1>
+              </header>
+              <div class="sample">
+                <h2 class="title">A UX journey</h2>
+                <h3 class="tag">by Erica Horowitz</h3>
+                <p class="date">It all started when...</p>
+              </div>
+              <p class="more">[ click for more information ]</p>
+            </div>
+          </div>
+        </a>
+      </section><!-- 
+
+       --><section class="square contact" ng-controller="contactListCtrl">
+        <div class="square-wrapper">
+          <div class="front">
+            <header>
+              <h1>contact</h1>
+            </header>
+            <ul class="contact-list">
+                <li ng-repeat="item in contactList"><a href="{{item.url}}" alt="{{item.alt}}"><div class="icon icon-{{item.alt}}"></div><div class="note">{{item.name}}</div></a></li>
+            </ul>
+            <p><a href="mailto:ericalhorowitz@gmail.com" alt="email">ericalhorowitz@gmail.com</a></p>
+          </div>
+        </div>
+      </section>
     </section>
 
     <section class="details">
       <section class="portfolio big">
-        <a name="portfolio"></a>
-        <svg class="stamp" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 50" preserveAspectRatio="none">
-          <path d="M0 0 Q 2.5 40 5 0 
-               Q 7.5 40 10 0
-               Q 12.5 40 15 0
-               Q 17.5 40 20 0
-               Q 22.5 40 25 0
-               Q 27.5 40 30 0
-               Q 32.5 40 35 0
-               Q 37.5 40 40 0
-               Q 42.5 40 45 0
-               Q 47.5 40 50 0 
-               Q 52.5 40 55 0
-               Q 57.5 40 60 0
-               Q 62.5 40 65 0
-               Q 67.5 40 70 0
-               Q 72.5 40 75 0
-               Q 77.5 40 80 0
-               Q 82.5 40 85 0
-               Q 87.5 40 90 0
-               Q 92.5 40 95 0
-               Q 97.5 40 100 0 Z">
-          </path>
-        </svg>
-        <div class="content-wrapper">
-
-          <!-- Insert Project Page here:-->
-          <div ng-include="'partials/projects.html'" ng-controller="projectListCtrl">
-          </div>
-
-          <div class="section-top">
-            <a href="#portfolio">. . .</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- INCLUDE EXPANDED RESUME-->
-      <section class="resume big">
-        <a name="resume"></a>
+        <a id="mywork"></a>
         <svg class="stamp" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 50" preserveAspectRatio="none">
           <path d="M0 0 Q 2.5 40 5 0 
                Q 7.5 40 10 0
@@ -96,15 +119,51 @@
               <p>Back to Top</p>
             </div>
           </a>
-          
+
+          <!-- Insert Project Page here:-->
+          <div ng-include="'partials/projects.html'">
+          </div>
+
+        </div>
+      </section>
+
+      <!-- INCLUDE EXPANDED RESUME-->
+      <section class="resume big">
+        <a id="mystory"></a>
+        <svg class="stamp" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 50" preserveAspectRatio="none">
+          <path d="M0 0 Q 2.5 40 5 0 
+               Q 7.5 40 10 0
+               Q 12.5 40 15 0
+               Q 17.5 40 20 0
+               Q 22.5 40 25 0
+               Q 27.5 40 30 0
+               Q 32.5 40 35 0
+               Q 37.5 40 40 0
+               Q 42.5 40 45 0
+               Q 47.5 40 50 0
+               Q 52.5 40 55 0
+               Q 57.5 40 60 0
+               Q 62.5 40 65 0
+               Q 67.5 40 70 0
+               Q 72.5 40 75 0
+               Q 77.5 40 80 0
+               Q 82.5 40 85 0
+               Q 87.5 40 90 0
+               Q 92.5 40 95 0
+               Q 97.5 40 100 0 Z">
+          </path>
+        </svg>
+        <div class="content-wrapper">
+          <a href="#head">
+            <div class="close">
+              <p>Back to Top</p>
+            </div>
+          </a>
 
           <!-- Insert Story Page here:-->
           <div ng-include="'partials/story.html'">
           </div>
 
-          <div class="section-top">
-            <a href="#resume">. . .</a>
-          </div>
         </div>
       </section>
     </section>
@@ -116,6 +175,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="js/plugins.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
