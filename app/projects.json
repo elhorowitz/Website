@@ -4,7 +4,11 @@
     "title": "Citizens Connect",
     "type": "UX Case Study",
     "date": "2014",
-    "blurb": "",
+    "blurb": [
+      "Citizens Connect is the online service portal of the City of Boston website. While its award-winning mobile app counterpart is clean and user-friendly, the website is basically an overwhelming site map. With the help of two colleagues, Geetha Pai and Hamy Pham, I decided to try my hand at redesigning it in less than two weeks.",
+      "We started by determining a new information architecture (IA) for the ~100 services provided on the portal in order to make user flows more efficient and intuitive. We then fleshed out these user flows into sketches of the redesigned site’s distinct types of pages. While Geetha wire-framed and user-tested the new flow, Hamy set out to create a style-guide for the new site, using bold colors, flat design, and strategic white spaces to give the site a more modern feel. I, meanwhile, started coding the site\u0027s layout and structure.",
+      "It was a mad dash to the finish-line (I had about 1.5 days to implement the site\u0027s final structure and design), but we made it. The resulting site is usable, intuitive, and now a powerful resource for Boston\u0027s residents."
+    ],
     "images": [
       {
         "source": "img/citizens_connect/current_collapsed.png",
@@ -55,7 +59,10 @@
     "title": "What Should We Watch?",
     "type": "UX Design Exercise",
     "date": "2014",
-    "blurb": "",
+    "blurb": [
+      "While at Fresh Tilled Soil, I was tasked with designing a single-function mobile app from conception to high-fidelity prototype in two weeks. I decided to tackle a problem that I often encountered - choosing a movie to watch with friends on Netflix.",
+      "I ran several interviews and sent out a survey, and quickly found that a) I was not alone in experiencing this problem and b) a long decision process often stems from people\u0027s reluctance to re-watch movies. I therefore designed What Should We Watch?, an app that connects users\u0027 Netflix accounts in order to hide movies already seen by any of the party."
+    ],
     "images": [
       {
         "source": "img/bootcamp/bootcamp_factors.png",
@@ -128,7 +135,10 @@
     "title": "Being Heard",
     "type": "HCI Research",
     "date": "2010",
-    "blurb": "",
+    "blurb": [
+      "The abundance of data being collected by social media provides us with a rich resource of communication habits. Cornell University\u0027s Reimagination Lab, led by Professor Dan Cosley, decided to tap into this resource to help people better understand how well they communicate with others.",
+      "The first iteration of this research focused on asynchronous media channels and led to \"PieTime\", a data visualization tool that mapped archived email and phone message volume to time. The second iteration, which I was involved with, focused on synchronous media channels. \"Being Heard\" is a Firefox extension that visualizes a user\u0027s Google Chat history qualitatively (via a word cloud) and quantitatively (via a graph showing chat volume mapped over time)."
+    ],
     "images": [
       {
         "source": "img/being_heard/pieTime.png",
