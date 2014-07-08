@@ -1,0 +1,22 @@
+[
+  { 
+    "name": "LinkedIn",
+    "alt": "linkedin", 
+    "url": "http://www.linkedin.com/pub/erica-horowitz/25/264/241"
+  },
+  { 
+    "name": "GitHub",
+    "alt": "github", 
+    "url": "https://github.com/elhorowitz"
+  },
+  { 
+    "name": "Twitter",
+    "alt": "twitter", 
+    "url": "https://twitter.com/ElHorah"
+  },
+  { 
+    "name": "Blog",
+    "alt": "blog", 
+    "url": "http://cookingwithcode.ghost.io/"
+  }
+]
