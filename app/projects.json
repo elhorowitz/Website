@@ -11,14 +11,14 @@
     ],
     "images": [
       {
-        "source": "img/citizens_connect/current_collapsed.png",
-        "caption": "The current site",
-        "alt": "the current site"
-      },
-      {
-        "source": "img/citizens_connect/paying_ticket.jpg",
+        "source": "img/citizens_connect/payparkingticket.png",
         "caption": "All current experience flows for paying a parking ticket",
         "alt": "flow of current site"
+      },
+      {
+        "source": "img/citizens_connect/sketch2.png",
+        "caption": "Sketch of the new design",
+        "alt": "sketch of the new design"
       },
       {
         "source": "img/citizens_connect/wireframe_hp.gif",
@@ -31,9 +31,9 @@
         "alt": "design of new site"
       },
       {
-        "source": "img/citizens_connect/citizens_website2.png",
-        "caption": "Coded prototype of the new site",
-        "alt": "coded new site"
+        "source": "img/citizens_connect/beforeNafter.png",
+        "caption": "Comparison of the site before and after the redesign",
+        "alt": "before\/after comparison of the site"
       }
     ]
   },
@@ -65,29 +65,19 @@
     ],
     "images": [
       {
-        "source": "img/bootcamp/bootcamp_factors.png",
-        "caption": "Brainstorming why group decisions are hard",
-        "alt": "factors involved in making group decisions"
+        "source": "img/bootcamp/decision-flow.png",
+        "caption": "The Decision flow for picking a Netflix movie to watch",
+        "alt": "decision flow for picking a Netflix movie"
       },
       {
-        "source": "img/bootcamp/bootcamp_personas.png",
-        "caption": "Personas for group decision makers",
-        "alt": "personas"
+        "source": "img/bootcamp/thought-process.png",
+        "caption": "How I went about finding solutions to the problem",
+        "alt": "flow of solution process"
       },
       {
-        "source": "img/bootcamp/bootcamp_thoughtprocess.png",
-        "caption": "Flow for choosing what to watch on Netflix",
-        "alt": "flow of decision making"
-      },
-      {
-        "source": "img/bootcamp/bootcamp_paper-proto.png",
-        "caption": "Paper prototype of the app: What Should We Watch",
-        "alt": "paper prototype of solution"
-      },
-      {
-        "source": "img/bootcamp/bootcamp_POPoverall.png",
-        "caption": "The prototype using POP app",
-        "alt": "Digitized paper prototype"
+        "source": "img/bootcamp/low-fi_proto.png",
+        "caption": "Low-fidelity prototype of the app: What Should We Watch",
+        "alt": "low-fi prototype of solution"
       },
       {
         "source": "img/bootcamp/bootcamp_pickfriends.png",
@@ -114,17 +104,17 @@
     ],
     "images": [
       {
-        "source": "img/goalmometer/thesis-thermo.png",
+        "source": "img/goalmometer/thesis-thermo2.png",
         "caption": "The inspiration: Thesis Thermometer",
         "alt": "thesis thermometer"
       },
       {
-        "source": "img/goalmometer/danco-version.png",
+        "source": "img/goalmometer/Danco-Proto.png",
         "caption": "Tool idea #1: digitized thesis thermometer",
         "alt": "brainstorm idea #1"
       },
       {
-        "source": "img/goalmometer/erica-version.png",
+        "source": "img/goalmometer/Erica-Proto.png",
         "caption": "Tool idea #2: generates a picture as user complete tasks",
         "alt": "brainstorm idea #2"
       }
@@ -146,19 +136,14 @@
         "alt": "PieTime"
       },
       {
-        "source": "img/being_heard/er-diagram.jpg",
+        "source": "img/being_heard/er-diagram.png",
         "caption": "ER Diagram for Being Heard",
         "alt": "ER diagram"
       },
       {
-        "source": "img/being_heard/sketch.jpg",
-        "caption": "Sketch of Being Heard",
-        "alt": "sketch of the design"
-      },
-      {
-        "source": "img/being_heard/default2notes.png",
-        "caption": "Notes on an iteration of Being Heard",
-        "alt": "Annotated Being Heard app"
+        "source": "img/being_heard/beingheard-proto.png",
+        "caption": "\"Night\" and \"Day\" prototypes of the second iteration",
+        "alt": "second iteration"
       }
     ]
   }

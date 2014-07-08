@@ -48,7 +48,7 @@
   //===== Global Changes ===================================
   body {-webkit-text-size-adjust: none;}
   .main { height: auto; }
-  .content-wrapper { padding: 0px 10px 50px; }
+  .content-wrapper { padding: 0px 10px }
 
 
   //===== Header Changes ===================================
@@ -104,22 +104,30 @@
 
   .gallery { 
     height: 17em;
-    margin-bottom: 3em;
     padding-left: 0; 
     position: relative;
     text-align: center;
 
+    .ng-scope {
+      @include hidden;
+      width: 100%;
+
+      &:first-child {
+        left: auto;
+        margin: 0;
+        position: relative;
+        top: auto;
+
+        &:after {
+          color: darken( $portfolio-accent-color, 12% );
+          content: "Click for more pictures";
+        }
+      }
+    }
+
     .thumbnail { 
       text-align: left;
       width: initial;
-    }
-
-    .directions {
-      bottom: -2em;
-      color: darken( $portfolio-accent-color, 12% );
-      position: absolute;
-      text-align: center;
-      width: 100%;
     }
   }
 

@@ -21,12 +21,16 @@
 }
 
 @mixin transition ($target, $speed, $type) {
-    -webkit-transition: $target $speed $type;
-       -moz-transition: $target $speed $type;
-         -o-transition: $target $speed $type;
+  -webkit-transition: $target $speed $type;
+     -moz-transition: $target $speed $type;
+       -o-transition: $target $speed $type;
 }
 
-
+@mixin hidden () {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
 
 
 // Media
