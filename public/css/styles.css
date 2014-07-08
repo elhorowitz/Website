@@ -1227,8 +1227,9 @@ header.job-title {
   margin: 0 auto 2em;
   max-width: 990px;
   position: relative;
+  width: 80%;
 }
-/* line 18, ../../app/css/layout/_content.scss */
+/* line 19, ../../app/css/layout/_content.scss */
 .details .content-wrapper:before {
   content: '';
   display: inline-block;
@@ -1236,12 +1237,12 @@ header.job-title {
   vertical-align: middle;
 }
 
-/* line 27, ../../app/css/layout/_content.scss */
+/* line 28, ../../app/css/layout/_content.scss */
 .proj-details {
   float: right;
 }
 
-/* line 35, ../../app/css/layout/_content.scss */
+/* line 36, ../../app/css/layout/_content.scss */
 .close {
   cursor: pointer;
   font-weight: 600;
@@ -1250,11 +1251,11 @@ header.job-title {
   top: 20px;
   z-index: 999;
 }
-/* line 43, ../../app/css/layout/_content.scss */
+/* line 44, ../../app/css/layout/_content.scss */
 .close p {
   font-weight: 600;
 }
-/* line 45, ../../app/css/layout/_content.scss */
+/* line 46, ../../app/css/layout/_content.scss */
 .close:before {
   border-bottom: 15px solid;
   border-left: 15px solid transparent;
@@ -1269,7 +1270,7 @@ header.job-title {
   -moz-transition: top 0.2s;
   -o-transition: top 0.2s;
 }
-/* line 61, ../../app/css/layout/_content.scss */
+/* line 62, ../../app/css/layout/_content.scss */
 .close:after {
   content: "";
   display: block;
@@ -1279,12 +1280,12 @@ header.job-title {
   top: -6px;
   width: 10px;
 }
-/* line 71, ../../app/css/layout/_content.scss */
+/* line 72, ../../app/css/layout/_content.scss */
 .close:hover:before {
   top: -20px;
 }
 
-/* line 79, ../../app/css/layout/_content.scss */
+/* line 80, ../../app/css/layout/_content.scss */
 .section-top {
   font-size: 5em;
   font-family: "Josefin Slab", serif;
@@ -1292,7 +1293,7 @@ header.job-title {
   margin-top: -50px;
   text-align: center;
 }
-/* line 90, ../../app/css/layout/_content.scss */
+/* line 91, ../../app/css/layout/_content.scss */
 .section-top a:hover:after {
   content: "[ Top of Section ]";
   display: block;
@@ -1499,6 +1500,7 @@ header.job-title {
   /* line 9, ../../app/css/layout/_media-queries.scss */
   .side-nav .title {
     font-size: 1.3em;
+    word-wrap: break-word;
   }
 
   /* line 13, ../../app/css/layout/_media-queries.scss */
@@ -1583,8 +1585,9 @@ header.job-title {
   }
 
   /* line 51, ../../app/css/layout/_media-queries.scss */
-  .content-wrapper {
+  .details .content-wrapper {
     padding: 0px 10px;
+    width: 100%;
   }
 
   /* line 55, ../../app/css/layout/_media-queries.scss */
