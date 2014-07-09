@@ -34,25 +34,6 @@
         </div>
       </section><!-- 
 
-       --><section class="square portfolio">
-        <a href="#mywork">
-          <div class="square-wrapper" aria-live="polite">
-
-            <div class="back">
-              <header>
-                <h1>work</h1>
-              </header>
-              <div class="sample">
-                <h2 class="title">{{thisProj.title}}</h2>
-                <h3 class="tag">{{thisProj.type}}</h3>
-                <p class="date">{{thisProj.date}}</p>
-              </div>
-              <p class="more">[ click for more information ]</p>
-            </div>
-          </div>
-        </a>
-      </section><!-- 
-
        --><section class="square resume">
         <a href="#mystory">
           <div class="square-wrapper" aria-live="polite">
@@ -64,7 +45,26 @@
               <div class="sample">
                 <h2 class="title">A UX journey</h2>
                 <h3 class="tag">by Erica Horowitz</h3>
-                <p class="date">It all started when...</p>
+                <p class="date">You can take the girl out of UX...</p>
+              </div>
+              <p class="more">[ click for more information ]</p>
+            </div>
+          </div>
+        </a>
+      </section><!-- 
+
+      --><section class="square portfolio">
+        <a href="#mywork">
+          <div class="square-wrapper" aria-live="polite">
+
+            <div class="back">
+              <header>
+                <h1>work</h1>
+              </header>
+              <div class="sample">
+                <h2 class="title">{{thisProj.title}}</h2>
+                <h3 class="tag">{{thisProj.type}}</h3>
+                <p class="date">{{thisProj.date}}</p>
               </div>
               <p class="more">[ click for more information ]</p>
             </div>
@@ -88,6 +88,48 @@
     </section>
 
     <section class="details">
+
+      <!-- INCLUDE EXPANDED STORY-->
+      <section class="resume big" ng-controller="storyCtrl">
+        <a id="mystory"></a>
+        <svg class="stamp" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 50" preserveAspectRatio="none">
+          <path d="M0 0 Q 2.5 40 5 0
+               Q 7.5 40 10 0
+               Q 12.5 40 15 0
+               Q 17.5 40 20 0
+               Q 22.5 40 25 0
+               Q 27.5 40 30 0
+               Q 32.5 40 35 0
+               Q 37.5 40 40 0
+               Q 42.5 40 45 0
+               Q 47.5 40 50 0
+               Q 52.5 40 55 0
+               Q 57.5 40 60 0
+               Q 62.5 40 65 0
+               Q 67.5 40 70 0
+               Q 72.5 40 75 0
+               Q 77.5 40 80 0
+               Q 82.5 40 85 0
+               Q 87.5 40 90 0
+               Q 92.5 40 95 0
+               Q 97.5 40 100 0 Z">
+          </path>
+        </svg>
+        <div class="content-wrapper">
+          <a href="#head">
+            <div class="close">
+              <p>Back to Top</p>
+            </div>
+          </a>
+
+          <!-- Insert Story Page here:-->
+          <div ng-include="'partials/story.html'">
+          </div>
+
+        </div>
+      </section>
+
+      <!-- INCLUDE EXPANDED PORTFOLIO -->
       <section class="portfolio big">
         <a id="mywork"></a>
         <svg class="stamp" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 50" preserveAspectRatio="none">
@@ -126,46 +168,6 @@
 
         </div>
       </section>
-
-      <!-- INCLUDE EXPANDED RESUME-->
-      <section class="resume big">
-        <a id="mystory"></a>
-        <svg class="stamp" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 50" preserveAspectRatio="none">
-          <path d="M0 0 Q 2.5 40 5 0 
-               Q 7.5 40 10 0
-               Q 12.5 40 15 0
-               Q 17.5 40 20 0
-               Q 22.5 40 25 0
-               Q 27.5 40 30 0
-               Q 32.5 40 35 0
-               Q 37.5 40 40 0
-               Q 42.5 40 45 0
-               Q 47.5 40 50 0
-               Q 52.5 40 55 0
-               Q 57.5 40 60 0
-               Q 62.5 40 65 0
-               Q 67.5 40 70 0
-               Q 72.5 40 75 0
-               Q 77.5 40 80 0
-               Q 82.5 40 85 0
-               Q 87.5 40 90 0
-               Q 92.5 40 95 0
-               Q 97.5 40 100 0 Z">
-          </path>
-        </svg>
-        <div class="content-wrapper">
-          <a href="#head">
-            <div class="close">
-              <p>Back to Top</p>
-            </div>
-          </a>
-
-          <!-- Insert Story Page here:-->
-          <div ng-include="'partials/story.html'">
-          </div>
-
-        </div>
-      </section>
     </section>
 
     <footer class="footer" role="footer">
@@ -173,8 +175,7 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
-    <script src="js/plugins.js"></script>
+    <script src="js/plugins.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

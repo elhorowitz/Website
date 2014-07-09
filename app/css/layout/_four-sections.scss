@@ -25,7 +25,7 @@
 .portfolio {
   background: $portfolio-color;
 
-  .close:after { background: $blue; }
+  .close:after { background: $white; }
 
   .sample:before,
   .sample:after { color: $portfolio-accent-color; }
@@ -101,17 +101,17 @@
     padding-bottom: 0;
   }
 
-  .close:after { background: $white; }
+  .close:after { background: $blue; }
 
   .sample:before,
   .sample:after { color: $resume-accent-color; }
 }
 
-.timeline {
-  float: right;
-  margin: 0 0 0 ($gutter * 2 * 100%);
+.cartoon {
+  float: left;
+  margin: 0 ($gutter * 2 * 100%) 0 0;
 
-  h3 { border-bottom: 1px solid $white; }
+  img { width: 95%; }
 }
 
 

@@ -47,3 +47,10 @@ app.controller('contactListCtrl', ['$scope', '$http',
       $scope.contactList = data;
     });
   }]);
+
+app.controller('storyCtrl', ['$scope', '$http',
+  function ($scope, $http) {
+    $http.get('story.json').success(function(data) {
+      $scope.paragraphList = data;
+    });
+  }]);
